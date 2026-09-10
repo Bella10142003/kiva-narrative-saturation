@@ -1,3 +1,25 @@
+# 6 · Simulation validation
+
+> 模拟验证。以下为英文导航，中文原文见下方。
+
+**This is the part of the project you can run yourself.** From the repository root:
+
+```bash
+pip install numpy pandas scipy scikit-learn
+bash ../run_demo.sh      # or: bash run_demo.sh from the repo root
+```
+
+Twenty thousand synthetic loans are generated with the true coefficients planted in them, the full analysis
+pipeline is run against that data, and every estimate is scored against a ground truth the pipeline never
+reads. Roughly 90 seconds end to end; output goes to `_run/`.
+
+It found that the proposal's headline specification overstated market crowding by about 3×, and that a
+mirror pool built only from posting time recovers a near-unbiased estimate. Fourteen methodology components
+were scored this way: three kept, four no-ops, five rewritten, two removed. The written verdict is
+[`模拟验证报告.md`](模拟验证报告.md).
+
+---
+
 # Kiva 叙事饱和提案 · 模拟验证工作区
 
 在提交前用合成数据实际跑一遍提案的分析流程，检验每个环节的必要性与可行性。
