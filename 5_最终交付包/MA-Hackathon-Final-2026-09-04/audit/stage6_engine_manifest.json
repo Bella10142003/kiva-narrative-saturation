@@ -1,0 +1,19 @@
+{
+  "training_period": "2016-2024",
+  "holdout_period": "2025",
+  "baseline": "posting-time controls and categorical context",
+  "enhanced": "baseline plus C/H/CH/V/G/VG and recurring-language share",
+  "estimators": {
+    "duration": "SGDRegressor squared-error on log1p hours",
+    "72h": "SGDClassifier logistic loss"
+  },
+  "random_seed": 20260904,
+  "duration_primary_holdout_slice": "2025 focal loans with at least 35 calendar days to observation cutoff",
+  "72h_holdout_slice": "2025 focal loans with at least 72 hours to observation cutoff",
+  "engine_scope": "triage and experiment prioritization; not a causal or automated decision system",
+  "raw_identifiers_in_engine": false,
+  "row_level_scores_persisted": false,
+  "elapsed_seconds": 39.361,
+  "rss_gib_at_end": 2.903,
+  "row_level_scores_persisted_in_external_zip": false
+}

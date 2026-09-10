@@ -1,0 +1,51 @@
+{
+  "CFG": {
+    "SEED": 20260823,
+    "N": 20000,
+    "START": "2016-01-01",
+    "END": "2025-12-31",
+    "FUNDRAISE_CAP_DAYS": 35,
+    "LAG_HALFLIFE_DAYS": 7.0,
+    "TARGET_MEDIAN_HOURS": 62.0,
+    "MIRROR_WINDOW_DAYS": 14,
+    "SIGMA_EPS": 1.6,
+    "EXPIRE_ENABLED": true,
+    "TERMINAL_DATE_MISSING_RATE": 0.35
+  },
+  "TRUE_RAW": {
+    "a1_C": 0.15,
+    "a2_H": 0.9,
+    "a3_CH": 0.52,
+    "a4_V": 0.06,
+    "a5_G": 0.35,
+    "a6_VG": 0.18,
+    "a3_year_growth": 0.055,
+    "a6_year_growth": 0.13,
+    "c0": 1.9370385715777163,
+    "h0": 0.16028954810309637,
+    "v0": 2.1145214193315347,
+    "g0": 0.17076291423108433,
+    "BASE": 3.8652418526140524
+  },
+  "TRUE_STANDARDISED": {
+    "b1_C": 0.13777120203996052,
+    "b2_H": 0.17019854916953267,
+    "b3_CH": 0.11713659871084867,
+    "b4_V": 0.047584386917314946,
+    "b5_G": 0.05330772772444879,
+    "b6_VG": 0.036987931301871245
+  },
+  "n": 20000,
+  "n_partners": 72,
+  "n_template_families": 14,
+  "pct_unfunded": 0.08895,
+  "median_hours": 62.30325962752924,
+  "mean_hours": 133.38224296524905,
+  "mean_active_pool": 9.04645,
+  "p90_active_pool": 20.0,
+  "share_pool_ge10": 0.39425,
+  "mean_H": 0.15907524411727078,
+  "sd_H": 0.18811359295621785,
+  "mean_Nlag": 30.5965,
+  "mean_mirror_pool": 14.48615
+}

@@ -1,0 +1,48 @@
+{
+  "notebooks": [
+    {
+      "notebook": "S0_prepare.ipynb",
+      "executed": true,
+      "code_cells": 3,
+      "elapsed_seconds": 0.88
+    },
+    {
+      "notebook": "S1_audit.ipynb",
+      "executed": true,
+      "code_cells": 3,
+      "elapsed_seconds": 0.838
+    },
+    {
+      "notebook": "S2_text.ipynb",
+      "executed": true,
+      "code_cells": 3,
+      "elapsed_seconds": 0.969
+    },
+    {
+      "notebook": "S3_pools.ipynb",
+      "executed": true,
+      "code_cells": 3,
+      "elapsed_seconds": 0.989
+    },
+    {
+      "notebook": "S4_models.ipynb",
+      "executed": true,
+      "code_cells": 3,
+      "elapsed_seconds": 1.006
+    },
+    {
+      "notebook": "S5_hetero.ipynb",
+      "executed": true,
+      "code_cells": 3,
+      "elapsed_seconds": 1.025
+    },
+    {
+      "notebook": "S6_engine.ipynb",
+      "executed": true,
+      "code_cells": 3,
+      "elapsed_seconds": 0.826
+    }
+  ],
+  "kernel": "<PROJECT_ROOT>/4_\u4e2d\u95f4\u4ea7\u7269/kernels/hackathon-final/kernel.json",
+  "scope": "checkpoint-based reproducibility and audit; full-data computation is in src scripts"
+}

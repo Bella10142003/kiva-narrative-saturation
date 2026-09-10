@@ -1,0 +1,2 @@
+focal_loans,pool_checks,max_abs_error_raw,max_abs_error_residual,acceptance_threshold,passed
+200,600,2.90878432451791e-14,2.5091040356528538e-14,1e-09,True

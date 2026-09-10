@@ -1,0 +1,22 @@
+{
+  "slide_count": 16,
+  "core_slides": 10,
+  "appendix_slides": 6,
+  "slide_size_px": [
+    1280,
+    720
+  ],
+  "design_system": "Codex Grid",
+  "output": "Kiva_Final_Presentation_2026-09-04.pptx",
+  "figure_sha256": {
+    "fig01_channel_scenarios.png": "23244ce5a2ed9e30e95819000e78295722d839083610396849ef1637338476a1",
+    "fig02_specification_forest.png": "bd3925963a652a17106974d03dc4ab659c03cddccd01611571f59c72346d66ba",
+    "fig03_year_scenarios.png": "12b56e66c7e8a5b40ac3d5d009c19d642d598f0ed9acc565e9669a7773490e60",
+    "fig04_holdout_comparison.png": "4ce37be0fecd6080b2a1540e1c9c29bcf6bff1ff89891be096b22a8deda20f5d",
+    "fig05_holdout_calibration.png": "5cefaca59037d476e8d164cd9d6a54f84978087fc24080093f27f05a8b7dbf96",
+    "fig06_sample_flow.png": "deb697864aaf119d816ec55fc8ab878d52921f578eda3080870c61b88fef9cd1",
+    "fig07_current_joint_support.png": "3f974e76e19f68f92687923a8a2944fb7d880718004281a8bf19467d3da22aa2",
+    "fig08_sector_calibration_gaps.png": "89cab1cebe9c142a8f7f81380c10c8fe372c14bcc495a871b75ec63cda040e67"
+  },
+  "speaker_notes_embedded": true
+}

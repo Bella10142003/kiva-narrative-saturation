@@ -1,0 +1,235 @@
+{
+  "status": "validated sensitivity comparison; not a final-package update",
+  "generated_at": "2026-08-31T19:46:13+10:00",
+  "comparison_scope": {
+    "outcome": "log1p funding hours",
+    "period": "2016-2024 training sample",
+    "pools": "active same-sector and 35-65 day lagged same-sector",
+    "model": "same controls, fixed effects, and country/week two-way CRV1",
+    "difference_test": "descriptive point-estimate comparison only; no formal cross-model equality test"
+  },
+  "quality_gates": {
+    "description_identity_passed": true,
+    "description_identity_max_abs_error": 1.7208456881689926e-15,
+    "identity_threshold": 1e-09,
+    "working_raw_results_match_corrected_rebuild_with_tolerance": true
+  },
+  "sample_relation": {
+    "use_n": 1234131,
+    "description_n": 1234124,
+    "use_only": 7,
+    "description_only": 0
+  },
+  "text_diagnostics": {
+    "use": {
+      "nonempty_pct": 97.3121,
+      "median_tokens": 10.0,
+      "random_pair_zero_overlap_pct": 6.44,
+      "window_H_variance": 0.0255821671
+    },
+    "description": {
+      "nonempty_pct": 97.3114,
+      "median_tokens": 93.0,
+      "random_pair_zero_overlap_pct": 5.85,
+      "window_H_variance": 0.0149019353
+    }
+  },
+  "common_sample_correlations": {
+    "n": 1234124.0,
+    "corr_H": 0.9046654471154367,
+    "corr_G": 0.916419467050355,
+    "corr_CH": 0.8586413172121383,
+    "corr_VG": 0.9008624629726286
+  },
+  "coefficients": [
+    {
+      "term": "C",
+      "use_estimate": 0.5202465351140555,
+      "use_ci_low": 0.4402322090545624,
+      "use_ci_high": 0.6002608611735486,
+      "use_p_value": 0.0,
+      "description_estimate": 0.4450537292795479,
+      "description_ci_low": 0.3127083378229254,
+      "description_ci_high": 0.5773991207361705,
+      "description_p_value": 2.2133353372311152e-08,
+      "point_estimate_difference_description_minus_use": -0.0751928058345076
+    },
+    {
+      "term": "H",
+      "use_estimate": 0.4036051701543909,
+      "use_ci_low": 0.2758285768336749,
+      "use_ci_high": 0.531381763475107,
+      "use_p_value": 9.047651405857948e-08,
+      "description_estimate": 0.5153608738376357,
+      "description_ci_low": 0.4426173151298488,
+      "description_ci_high": 0.5881044325454226,
+      "description_p_value": 0.0,
+      "point_estimate_difference_description_minus_use": 0.11175570368324483
+    },
+    {
+      "term": "CH",
+      "use_estimate": 0.1016646910603901,
+      "use_ci_low": 0.0356713684719825,
+      "use_ci_high": 0.1676580136487976,
+      "use_p_value": 0.0033078624872473,
+      "description_estimate": 0.1297942252006694,
+      "description_ci_low": 0.0875221636074108,
+      "description_ci_high": 0.172066286793928,
+      "description_p_value": 1.6627398258250994e-07,
+      "point_estimate_difference_description_minus_use": 0.028129534140279314
+    },
+    {
+      "term": "V",
+      "use_estimate": 0.0496664474612454,
+      "use_ci_low": -0.0922516358209797,
+      "use_ci_high": 0.1915845307434707,
+      "use_p_value": 0.484525513107515,
+      "description_estimate": 0.136727352965411,
+      "description_ci_low": -0.0727641033182715,
+      "description_ci_high": 0.3462188092490935,
+      "description_p_value": 0.1953282586349021,
+      "point_estimate_difference_description_minus_use": 0.08706090550416559
+    },
+    {
+      "term": "G",
+      "use_estimate": -0.1385318811883885,
+      "use_ci_low": -0.2560544488662041,
+      "use_ci_high": -0.0210093135105729,
+      "use_p_value": 0.0219154056537629,
+      "description_estimate": -0.2251849390804945,
+      "description_ci_low": -0.3700634581515524,
+      "description_ci_high": -0.0803064200094365,
+      "description_p_value": 0.0030621682547422,
+      "point_estimate_difference_description_minus_use": -0.086653057892106
+    },
+    {
+      "term": "VG",
+      "use_estimate": 0.0417475494570047,
+      "use_ci_low": 0.0143264971435289,
+      "use_ci_high": 0.0691686017704806,
+      "use_p_value": 0.0036583765402227,
+      "description_estimate": -0.0135718934179495,
+      "description_ci_low": -0.0441148689656421,
+      "description_ci_high": 0.0169710821297431,
+      "description_p_value": 0.3755627896991931,
+      "point_estimate_difference_description_minus_use": -0.0553194428749542
+    }
+  ],
+  "recurring_language": {
+    "rule": {
+      "definition_period": "2016-2024 training documents only",
+      "unit": "masked contiguous 5-gram",
+      "minimum_training_documents": 659,
+      "minimum_countries": 3,
+      "attribution_boundary": "boilerplate-like recurring language; no Lending Partner attribution is possible without partner identifiers"
+    },
+    "field_diagnostics": {
+      "use": {
+        "approved_phrases": 409,
+        "loans": 1453846,
+        "nonzero_share_pct": 38.850951,
+        "p50_removed_token_share": 0.0,
+        "p90_removed_token_share": 0.8,
+        "p99_removed_token_share": 1.0
+      },
+      "description": {
+        "approved_phrases": 9334,
+        "loans": 1453840,
+        "nonzero_share_pct": 96.0418,
+        "emptied_pct": 0.2677,
+        "mean_removed_token_share": 0.478792,
+        "p50_removed_token_share": 0.439024,
+        "p90_removed_token_share": 0.887097,
+        "p99_removed_token_share": 0.973333
+      }
+    },
+    "coefficient_sensitivity": [
+      {
+        "field": "use",
+        "term": "CH",
+        "raw_n": 1234131,
+        "raw_estimate": 0.1016646910603901,
+        "raw_ci_low": 0.0356713684719825,
+        "raw_ci_high": 0.1676580136487976,
+        "raw_p_value": 0.0033078624872473,
+        "residual_n": 1149206,
+        "residual_estimate": 0.0523192336712648,
+        "residual_ci_low": -0.0157704474258129,
+        "residual_ci_high": 0.1204089147683426,
+        "residual_p_value": 0.1287206904135678,
+        "point_estimate_change_residual_minus_raw": -0.0493454573891253
+      },
+      {
+        "field": "use",
+        "term": "VG",
+        "raw_n": 1234131,
+        "raw_estimate": 0.0417475494570047,
+        "raw_ci_low": 0.0143264971435289,
+        "raw_ci_high": 0.0691686017704806,
+        "raw_p_value": 0.0036583765402227,
+        "residual_n": 1149206,
+        "residual_estimate": 0.0584633108034281,
+        "residual_ci_low": 0.0260834247996136,
+        "residual_ci_high": 0.0908431968072427,
+        "residual_p_value": 0.0007078034796323,
+        "point_estimate_change_residual_minus_raw": 0.0167157613464234
+      },
+      {
+        "field": "description",
+        "term": "CH",
+        "raw_n": 1234124,
+        "raw_estimate": 0.1297942252006694,
+        "raw_ci_low": 0.0875221636074108,
+        "raw_ci_high": 0.172066286793928,
+        "raw_p_value": 1.6627398258250994e-07,
+        "residual_n": 1230306,
+        "residual_estimate": 0.0579878874229474,
+        "residual_ci_low": 0.0013404416995932,
+        "residual_ci_high": 0.1146353331463016,
+        "residual_p_value": 0.0450341146830162,
+        "point_estimate_change_residual_minus_raw": -0.07180633777772201
+      },
+      {
+        "field": "description",
+        "term": "VG",
+        "raw_n": 1234124,
+        "raw_estimate": -0.0135718934179495,
+        "raw_ci_low": -0.0441148689656421,
+        "raw_ci_high": 0.0169710821297431,
+        "raw_p_value": 0.3755627896991931,
+        "residual_n": 1230306,
+        "residual_estimate": 0.0077777790392958,
+        "residual_ci_low": -0.03880777832466,
+        "residual_ci_high": 0.0543633364032517,
+        "residual_p_value": 0.7382315230475238,
+        "point_estimate_change_residual_minus_raw": 0.0213496724572453
+      }
+    ]
+  },
+  "limitations": [
+    "The recurring-language comparison is an in-sample sensitivity analysis; the matched 2025 raw-field holdout is reported separately, and template-removed 2025 extrapolation has not been tested.",
+    "The two model samples differ by seven rows; description is a strict subset of the use sample.",
+    "Raw-versus-residual and field-versus-field point-estimate changes are not formal coefficient-difference tests, and residual samples differ from raw samples.",
+    "Descriptions are much longer than use text, so recurring phrase counts are not directly comparable as a rate of institutional templating.",
+    "The data contain no Lending Partner identifier, so recurring phrases cannot be attributed to a specific institution.",
+    "All estimates are conditional associations, not causal effects."
+  ],
+  "input_sha256": {
+    "use_model_results": "d5835946f76cc8f2bbbe571c896ca6bbca2d246acad1d4d7681242c4ab6aa99e",
+    "use_robustness": "328fb586720e436de81721058b068414eae3cbf6513ded3cc55ed71689f496a7",
+    "use_boilerplate_phrases": "bc9328912170ce69029234c7dc47544481348f6c28e7ba68a5c5fad1fe20bf41",
+    "use_boilerplate_distribution": "2ce9e0588a9e4c8ff8ce1ad7a541845ca767a85487eba062da0b96e581cea28f",
+    "description_model_results": "25fe9c0a11310cd7c9a7355e7ec25b905ad2592b3ee6dd236885098ff2e7b33a",
+    "description_boilerplate_phrases": "6ccb0932f751e5cffdee2ce06337f5ea10d7229a7084be92fb6c3a310fe6f954",
+    "description_boilerplate_distribution": "577038b019e81ef8268a7f460f54ebc56be0d9910a5b007164605e55da8b5c1e",
+    "description_manifest": "e397168a142f75ee6f9cf62f76a30290bb70648859384415a1b6541daa5d612b",
+    "text_field_diagnostics": "cc62956096aa9fcaa274670c2102deee7c33630647f6e5a7ebe5f3fbea7d845d",
+    "text_selection_diagnostics": "a9b3e63cf90bda21764f2aaaabb018e04b1f1085eec7d1121fe4260d9d8fa510",
+    "scaler_parameters": "a103a8c0d17620fcb253bd10f8f543b8399c0ee0338b44091b80b9ec5ce8e149",
+    "description_model_data": "b5b35134a72fa1b94636a56a72b79d9e86a5da858613176dac906c283cb6793b"
+  },
+  "runtime": {
+    "elapsed_seconds": 0.445,
+    "rss_gib": 0.417
+  }
+}

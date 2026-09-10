@@ -1,0 +1,48 @@
+{
+  "training_documents": 1316684,
+  "training_years": [
+    2016,
+    2024
+  ],
+  "holdout_year": 2025,
+  "primary_text": "use",
+  "masking": {
+    "exact_fields": [
+      "name",
+      "city",
+      "country_name",
+      "region"
+    ],
+    "regex_classes": [
+      "date",
+      "amount_or_currency",
+      "uppercase_abbreviation"
+    ],
+    "placeholders_retained": true
+  },
+  "tfidf": {
+    "implementation": "HashingVectorizer plus train-only smooth IDF",
+    "features": 131072,
+    "ngrams": [
+      1,
+      2
+    ],
+    "alternate_sign": false,
+    "dtype": "float32",
+    "normalization": "L2 after IDF weighting",
+    "residual_boundary_rule": "removed 5-gram spans are separated before unigram/bigram generation; no synthetic cross-gap bigrams",
+    "hash_collision_limitation": "Fixed-dimensional hashing is memory-bounded but may merge rare terms."
+  },
+  "recurring_language": {
+    "ngram": 5,
+    "hash_features_for_candidate_screen": 1048576,
+    "minimum_training_documents": 659,
+    "minimum_training_document_share": 0.0005,
+    "minimum_countries": 3,
+    "approved_exact_phrases": 409,
+    "claim_boundary": "cross-country recurring boilerplate-like language only; no Lending Partner identifier exists"
+  },
+  "random_seed": 20260904,
+  "processed_private_rows": 1453846,
+  "elapsed_seconds": 80.785
+}

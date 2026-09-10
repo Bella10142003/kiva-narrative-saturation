@@ -1,0 +1,175 @@
+{
+  "status": "matched-sample 2025 holdout comparison; not a final-package update",
+  "generated_at": "2026-08-31T19:51:21+10:00",
+  "design": {
+    "training_period": "2016-2024",
+    "holdout_period": "2025",
+    "common_sample": true,
+    "baseline": "four posting-time numeric controls plus categorical context",
+    "use_model": "baseline plus use C/H/CH/V/G/VG",
+    "description_model": "baseline plus description C/H/CH/V/G/VG",
+    "recurring_language_share_included": false,
+    "reason_recurring_language_excluded": "Use raw H/G on both sides to isolate field choice; recurring-language-removed 2025 extrapolation is a separate, untested specification.",
+    "estimators": {
+      "duration": "SGDRegressor squared-error on log1p funding hours",
+      "72h": "SGDClassifier logistic loss"
+    },
+    "random_seed": 20260904,
+    "paired_metric_uncertainty": "not estimated; comparisons are descriptive",
+    "working_checkpoint_note": "Working model_data/scalers are numerically aligned with the corrected rebuild; this diagnostic remains outside the final package.",
+    "description_train_scalers": {
+      "H_mean": 0.11649598548641171,
+      "H_std": 0.09946513721717302,
+      "G_mean": 0.11500384879709606,
+      "G_std": 0.09569765917776296
+    }
+  },
+  "samples": {
+    "train": 1234124,
+    "holdout_all_observed": 133409,
+    "holdout_at_least_35d": 123489,
+    "holdout_72h_eligible": 132998,
+    "holdout_72h_eligible_at_least_35d": 123489
+  },
+  "duration": {
+    "2025_all_observed": {
+      "controls_only": {
+        "mae_log_hours": 0.964601946518523,
+        "median_ae_log_hours": 0.8110378536318485,
+        "rmse_log_hours": 1.2252623976188175,
+        "r2_log_hours": 0.5523787397974138,
+        "mae_hours": 161.98429510454542,
+        "median_ae_hours": 44.47842923367344
+      },
+      "controls_plus_use": {
+        "mae_log_hours": 0.979089700778386,
+        "median_ae_log_hours": 0.8140039477275738,
+        "rmse_log_hours": 1.2473949030757496,
+        "r2_log_hours": 0.536061488437076,
+        "mae_hours": 162.08365406197015,
+        "median_ae_hours": 47.825393676669336
+      },
+      "controls_plus_description": {
+        "mae_log_hours": 0.9727449983989995,
+        "median_ae_log_hours": 0.8082333687932843,
+        "rmse_log_hours": 1.2392880281423873,
+        "r2_log_hours": 0.5420722068236313,
+        "mae_hours": 160.2704874388106,
+        "median_ae_hours": 47.226165209563874
+      }
+    },
+    "2025_at_least_35d_followup": {
+      "controls_only": {
+        "mae_log_hours": 0.9663070426055655,
+        "median_ae_log_hours": 0.8117606990968591,
+        "rmse_log_hours": 1.2282750278222243,
+        "r2_log_hours": 0.5540378708298139,
+        "mae_hours": 168.27435288759554,
+        "median_ae_hours": 46.36711295337679
+      },
+      "controls_plus_use": {
+        "mae_log_hours": 0.9831092917017648,
+        "median_ae_log_hours": 0.8163980311121248,
+        "rmse_log_hours": 1.2531705170204852,
+        "r2_log_hours": 0.5357765515617836,
+        "mae_hours": 168.5999003811709,
+        "median_ae_hours": 50.39837601724712
+      },
+      "controls_plus_description": {
+        "mae_log_hours": 0.9768328449244609,
+        "median_ae_log_hours": 0.811570253090979,
+        "rmse_log_hours": 1.2446634658726536,
+        "r2_log_hours": 0.5420578488632439,
+        "mae_hours": 166.71404865506213,
+        "median_ae_hours": 49.442251853274854
+      }
+    }
+  },
+  "fast_funding_72h": {
+    "2025_72h_eligible": {
+      "controls_only": {
+        "brier": 0.1354894330055626,
+        "roc_auc": 0.8986811387807806,
+        "average_precision": 0.9065987298808085,
+        "log_loss": 0.4313033967099056,
+        "accuracy_at_0.5": 0.8163957352742146
+      },
+      "controls_plus_use": {
+        "brier": 0.13746485571854392,
+        "roc_auc": 0.8918003313784862,
+        "average_precision": 0.9002523489184082,
+        "log_loss": 0.43122556941853574,
+        "accuracy_at_0.5": 0.8041624686085505
+      },
+      "controls_plus_description": {
+        "brier": 0.13624288875424537,
+        "roc_auc": 0.8942666623506534,
+        "average_precision": 0.9014176872811942,
+        "log_loss": 0.42873693665768864,
+        "accuracy_at_0.5": 0.8072001082723048
+      }
+    },
+    "2025_72h_eligible_at_least_35d": {
+      "controls_only": {
+        "brier": 0.13404189688150045,
+        "roc_auc": 0.9007026930879833,
+        "average_precision": 0.9052314196011857,
+        "log_loss": 0.4274878246059651,
+        "accuracy_at_0.5": 0.8189150450647427
+      },
+      "controls_plus_use": {
+        "brier": 0.1363957868658262,
+        "roc_auc": 0.893565431259613,
+        "average_precision": 0.8990017892472428,
+        "log_loss": 0.42836769597879115,
+        "accuracy_at_0.5": 0.8057478803780094
+      },
+      "controls_plus_description": {
+        "brier": 0.13496942073090532,
+        "roc_auc": 0.8961127208519093,
+        "average_precision": 0.9004418601295907,
+        "log_loss": 0.4253424000046872,
+        "accuracy_at_0.5": 0.8091813845767639
+      }
+    }
+  },
+  "interpretation": {
+    "description_beats_use_on_all_primary_table_metrics": true,
+    "description_vs_controls_primary_wins": [
+      "duration.mae_hours",
+      "fast_funding_72h.log_loss"
+    ],
+    "description_vs_controls_primary_losses": [
+      "duration.mae_log_hours",
+      "duration.rmse_log_hours",
+      "duration.r2_log_hours",
+      "fast_funding_72h.brier",
+      "fast_funding_72h.roc_auc",
+      "fast_funding_72h.average_precision",
+      "fast_funding_72h.accuracy_at_0.5"
+    ],
+    "conclusion": "Description is consistently better than use in this matched raw-field comparison, but narrative features do not stably improve on controls only."
+  },
+  "input_sha256": {
+    "model_data": "030d828055928a75991b1abe937297dcf4ecb0e4d556b1d8df66913c736e88cf",
+    "scaler_parameters": "a103a8c0d17620fcb253bd10f8f543b8399c0ee0338b44091b80b9ec5ce8e149",
+    "description_features_combined": "23b2ba2c36c42d93d791ab98d8d4a99bee6808c4234969d543aec5d3e1aa4776"
+  },
+  "runtime": {
+    "elapsed_seconds": 60.244,
+    "rss_gib": 0.881,
+    "design_matrix_train_shape": [
+      1234124,
+      284
+    ],
+    "design_matrix_holdout_shape": [
+      133409,
+      284
+    ]
+  },
+  "limitations": [
+    "This is a raw-field holdout comparison; recurring-language-removed use and description features were not evaluated on 2025.",
+    "No paired uncertainty was calculated for metric differences.",
+    "Out-of-time prediction does not establish causal validity or authorize deployment."
+  ]
+}

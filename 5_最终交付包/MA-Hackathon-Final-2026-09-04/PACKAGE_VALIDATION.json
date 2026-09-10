@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "checks": {
+    "unique_members": true,
+    "safe_relative_paths": true,
+    "no_source_or_row_level_data": true,
+    "no_dev_cache_or_redundant_inspection": true,
+    "no_local_path_personal_seed_or_credentials": true,
+    "required_deliverables_present": true
+  },
+  "artifact_members": 145,
+  "generated_metadata_members": 3,
+  "expected_total_members": 148
+}

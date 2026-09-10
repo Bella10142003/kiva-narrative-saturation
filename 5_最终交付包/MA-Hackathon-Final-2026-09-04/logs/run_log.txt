@@ -1,0 +1,21 @@
+setup | shapes=[] | mean_null_rates=[] | rss_gib=0.113 | elapsed_s=0.000
+S0 source manifests | shapes=[(28, 6), (6, 4)] | mean_null_rates=[0.5, 0.0] | rss_gib=0.114 | elapsed_s=0.011
+S0 safety assertions | shapes=[(6, 4)] | mean_null_rates=[0.0] | rss_gib=0.114 | elapsed_s=0.003
+setup | shapes=[] | mean_null_rates=[] | rss_gib=0.113 | elapsed_s=0.000
+S1 profile and freeze | shapes=[(1, 14), (10, 3), (1, 4)] | mean_null_rates=[0.0, 0.0, 0.0] | rss_gib=0.114 | elapsed_s=0.008
+S1 quality assertions | shapes=[(28, 3), (2, 6), (15, 11)] | mean_null_rates=[0.0, 0.0, 0.0] | rss_gib=0.114 | elapsed_s=0.007
+setup | shapes=[] | mean_null_rates=[] | rss_gib=0.113 | elapsed_s=0.000
+S2 text outputs | shapes=[(2, 15), (1, 6), (409, 5)] | mean_null_rates=[0.0, 0.0, 0.0] | rss_gib=0.114 | elapsed_s=0.011
+S2 description sensitivity | shapes=[(6, 8), (100, 5)] | mean_null_rates=[0.0, 0.0] | rss_gib=0.114 | elapsed_s=0.004
+setup | shapes=[] | mean_null_rates=[] | rss_gib=0.113 | elapsed_s=0.000
+S3 pool identity | shapes=[(600, 9), (1, 6), (15, 11)] | mean_null_rates=[0.0, 0.0, 0.0] | rss_gib=0.114 | elapsed_s=0.009
+S3 joint support | shapes=[(4, 14), (32, 8)] | mean_null_rates=[0.0, 0.0] | rss_gib=0.114 | elapsed_s=0.004
+setup | shapes=[] | mean_null_rates=[] | rss_gib=0.113 | elapsed_s=0.000
+S4 main estimates | shapes=[(12, 15), (6, 15), (4, 15)] | mean_null_rates=[0.0, 0.0, 0.0] | rss_gib=0.114 | elapsed_s=0.013
+S4 interpretation assertions | shapes=[(22, 15), (6, 8)] | mean_null_rates=[0.0, 0.0] | rss_gib=0.114 | elapsed_s=0.008
+setup | shapes=[] | mean_null_rates=[] | rss_gib=0.113 | elapsed_s=0.000
+S5 heterogeneity tables | shapes=[(18, 16), (2, 8), (28, 16), (30, 16)] | mean_null_rates=[0.0, 0.0, 0.0, 0.0] | rss_gib=0.114 | elapsed_s=0.021
+S5 rendered figures | shapes=[(18, 16)] | mean_null_rates=[0.0] | rss_gib=0.116 | elapsed_s=0.006
+setup | shapes=[] | mean_null_rates=[] | rss_gib=0.113 | elapsed_s=0.000
+S6 holdout diagnostics | shapes=[(44, 6), (20, 6), (5, 4), (31, 8)] | mean_null_rates=[0.0, 0.0, 0.0, 0.0] | rss_gib=0.114 | elapsed_s=0.011
+S6 deployment boundary | shapes=[(44, 6)] | mean_null_rates=[0.0] | rss_gib=0.114 | elapsed_s=0.002

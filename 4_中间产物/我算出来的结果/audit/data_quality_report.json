@@ -1,0 +1,26 @@
+{
+  "as_of_utc": "2026-01-01 00:00:00+00",
+  "raw_rows": 1453846,
+  "distinct_ids": 1453846,
+  "duplicate_id_keys": 0,
+  "invalid_fundraising_dates": 0,
+  "invalid_raised_dates": 0,
+  "negative_durations": 6,
+  "zero_durations": 0,
+  "sectors": 19,
+  "activities": 168,
+  "countries": 48,
+  "partner_identifier_present": false,
+  "excluded_lookahead_fields": [
+    "fundsLentInCountry"
+  ],
+  "raw_personal_fields_excluded_from_final_outputs": [
+    "name",
+    "city",
+    "latitude",
+    "longitude",
+    "image_url",
+    "description"
+  ],
+  "elapsed_seconds": 9.878
+}

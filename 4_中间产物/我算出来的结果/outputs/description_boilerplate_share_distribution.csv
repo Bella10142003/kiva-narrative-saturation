@@ -1,0 +1,2 @@
+field,loans,approved_phrases,minimum_training_documents,minimum_countries,nonzero_share_pct,emptied_pct,mean_share,p50,p90,p99
+description,1453840,9334,659,3,96.0418,0.2677,0.478792,0.439024,0.887097,0.973333

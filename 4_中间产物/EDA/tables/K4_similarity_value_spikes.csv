@@ -1,0 +1,3 @@
+variable,n,pct_exactly_0,pct_below_0.01,pct_above_0.5,pct_above_0.9,pct_exactly_1,n_exactly_1
+H_active_raw,1234131,0.00632,2.48969,3.50627,0.22769,0.0,0
+G_lag_raw,1234131,0.00154,2.46813,4.6209,0.05704,0.0,0

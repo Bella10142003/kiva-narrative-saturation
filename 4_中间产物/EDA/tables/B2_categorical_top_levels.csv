@@ -1,0 +1,74 @@
+variable,level,n,share_pct,n_levels_total
+sector,Agriculture,402595,32.622,17
+sector,Food,259893,21.059,17
+sector,Retail,235332,19.069,17
+sector,Housing,74036,5.999,17
+sector,Services,55101,4.465,17
+sector,Personal Use,42586,3.451,17
+sector,Clothing,35933,2.912,17
+sector,Education,34060,2.76,17
+sector,Clean Energy,21090,1.709,17
+sector,Transportation,16722,1.355,17
+sector,Reuse & Recycle,15349,1.244,17
+sector,Health,14620,1.185,17
+sector,Arts,13518,1.095,17
+sector,Construction,9077,0.735,17
+sector,Manufacturing,4199,0.34,17
+sector,Wholesale,18,0.001,17
+sector,Water,2,0.0,17
+country_name,Philippines,430030,34.845,46
+country_name,Kenya,231226,18.736,46
+country_name,Tajikistan,61063,4.948,46
+country_name,Uganda,57301,4.643,46
+country_name,Cambodia,54241,4.395,46
+country_name,Madagascar,43696,3.541,46
+country_name,Pakistan,35266,2.858,46
+country_name,Nicaragua,34552,2.8,46
+country_name,Liberia,24586,1.992,46
+country_name,Togo,24105,1.953,46
+country_name,Kyrgyzstan,19819,1.606,46
+country_name,India,18647,1.511,46
+country_name,Senegal,17999,1.458,46
+country_name,Honduras,17141,1.389,46
+country_name,Sierra Leone,16780,1.36,46
+country_name,Nigeria,13481,1.092,46
+country_name,Ghana,12593,1.02,46
+country_name,Palestine,12510,1.014,46
+country_name,Congo (DRC),10575,0.857,46
+country_name,Timor-Leste,10110,0.819,46
+country_name,Tanzania,9953,0.806,46
+country_name,Burkina Faso,9585,0.777,46
+country_name,Mozambique,7908,0.641,46
+country_name,Rwanda,7908,0.641,46
+country_name,Haiti,7116,0.577,46
+gender,female,1037442,84.063,2
+gender,male,196689,15.937,2
+repaymentInterval,monthly,1068132,86.549,3
+repaymentInterval,at_end,108055,8.756,3
+repaymentInterval,irregularly,57944,4.695,3
+status,funded,1234131,100.0,1
+activity,Farming,208526,16.897,157
+activity,General Store,143500,11.628,157
+activity,Pigs,76245,6.178,157
+activity,Personal Housing Expenses,72458,5.871,157
+activity,Retail,41276,3.345,157
+activity,Food Production/Sales,40679,3.296,157
+activity,Fish Selling,33179,2.688,157
+activity,Clothing Sales,31094,2.52,157
+activity,Cereals,30366,2.461,157
+activity,Fruits & Vegetables,29386,2.381,157
+activity,Home Appliances,28636,2.32,157
+activity,Grocery Store,28437,2.304,157
+activity,Agriculture,27089,2.195,157
+activity,Livestock,23199,1.88,157
+activity,Food,21001,1.702,157
+activity,Solar Home Systems,20825,1.687,157
+activity,Dairy,20409,1.654,157
+activity,Food Market,19478,1.578,157
+activity,Tailoring,18482,1.498,157
+activity,Fishing,16088,1.304,157
+activity,Poultry,16050,1.301,157
+activity,Cattle,15616,1.265,157
+activity,Higher education costs,14788,1.198,157
+activity,Primary/secondary school costs,13426,1.088,157
+activity,Food Stall,13136,1.064,157

@@ -1,0 +1,7 @@
+step,loans,excluded_at_step,reason
+Raw official extract,1453846,0,Source total
+Unique loan IDs,1453846,0,No duplicate IDs
+Valid nonnegative duration,1453840,6,raisedDate earlier than fundraisingDate
+72-hour label eligible,1453346,494,At least 72 hours of calendar follow-up; also excludes 6 invalid durations
+"Training 2016-2024, valid duration",1316678,0,Learned preprocessing and estimation period
+"2025 holdout, valid duration",137162,0,Untouched out-of-time evaluation period

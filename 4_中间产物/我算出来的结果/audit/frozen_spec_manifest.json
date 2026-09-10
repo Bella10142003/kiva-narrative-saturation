@@ -1,0 +1,16 @@
+{
+  "generated_at_local": "2026-08-31T15:28:34+1000",
+  "observation_cutoff_utc": "2026-01-01 00:00:00+00",
+  "train_years": [
+    2016,
+    2024
+  ],
+  "holdout_year": 2025,
+  "current_calibrated_hours": 394.781875,
+  "current_calibrated_days": 16.44924479166667,
+  "lag_gap_days": 35,
+  "lag_span_days": 30,
+  "text_diagnostic_sample_rule": "hash(id) % 100 < 5 on 2016-2024",
+  "random_seed": 20260904,
+  "elapsed_seconds": 25.388
+}

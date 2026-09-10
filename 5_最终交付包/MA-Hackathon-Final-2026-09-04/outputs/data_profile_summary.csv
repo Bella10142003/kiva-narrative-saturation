@@ -1,0 +1,2 @@
+rows,distinct_ids,null_ids,invalid_fundraising_dates,invalid_raised_dates,negative_durations,zero_durations,min_fundraising_ts,max_fundraising_ts,min_raised_ts,max_raised_ts,sectors,activities,countries
+1453846,1453846,0.0,0.0,0.0,6.0,0.0,2016-01-01 02:30:02+00:00,2025-12-31 20:30:25+00:00,2016-01-01 05:47:56+00:00,2025-12-31 23:50:42+00:00,19,168,48

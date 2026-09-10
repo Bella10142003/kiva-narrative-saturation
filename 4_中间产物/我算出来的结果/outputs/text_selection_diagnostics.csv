@@ -1,0 +1,3 @@
+field,diagnostic_sample_rows,random_same_sector_pairs,pair_zero_overlap_pct,pair_cosine_mean,pair_cosine_variance,sample_window_h_n,sample_window_h_variance,sample_window_h_median,sample_pool_size_median,representation_note,nonempty_pct,tokens_before_median,tokens_after_median,tokens_after_p90
+use,66083,10000,6.44,0.25932619,0.0413261056,62183,0.0255821671,0.24676691,69.0,deterministic 5% training sample; hashed unigram+bigram TF-IDF for field selection only,96.9901,10.0,10.0,18.0
+description,66083,10000,5.85,0.40893728,0.0283511169,62183,0.0149019353,0.42850685,69.0,deterministic 5% training sample; hashed unigram+bigram TF-IDF for field selection only,96.9901,89.0,89.0,161.0

@@ -1,0 +1,11 @@
+variable,n,n_levels,pct_missing,top1_level,top1_pct,top3_pct,top10_pct,hhi,levels_for_90pct
+status,1234131,1,0.0,funded,100.0,100.0,100.0,1.0,1
+sector,1234131,17,0.0,Agriculture,32.622,72.749,95.399,0.1965,8
+activity,1234131,157,0.0,Farming,16.897,34.702,57.264,0.0591,37
+country_name,1234131,46,0.0,Philippines,34.845,58.529,80.71,0.1686,17
+gender,1234131,2,0.0,female,84.063,100.0,100.0,0.7321,2
+repaymentInterval,1234131,3,0.0,monthly,86.549,100.0,100.0,0.7589,2
+week_id,1234131,462,0.0,2021-08-16,0.646,1.889,5.771,0.0026,368
+analysis_washin_eligible,1453840,2,0.0,True,98.649,100.0,100.0,,1
+raw_text_nonempty,1453840,2,0.0,True,97.312,100.0,100.0,,1
+residual_text_nonempty,1453840,2,0.0,True,90.601,100.0,100.0,,1

@@ -1,0 +1,4 @@
+followup_band,loans,median_funding_hours,p95_funding_hours
+72h_to_35d_followup,9808,37.130833333333335,401.46826388888843
+at_least_35d_followup,126860,65.40875,827.2108194444444
+less_than_72h_followup,494,5.689444444444444,36.54393055555555

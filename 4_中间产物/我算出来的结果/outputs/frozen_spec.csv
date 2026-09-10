@@ -1,0 +1,11 @@
+specification_item,frozen_value,evidence_and_rationale
+Sample split,2016-2024 train; 2025 untouched holdout,"All learned text rules, IDF, thresholds and scaling use training only"
+Time and wash-in,UTC; first 65 days excluded as focal observations,Lag window needs 35-day gap plus 30-day span; pools continue across 2024/2025
+Outcome,log1p(funding hours); 72h fast-funding flag as co-outcome,"All 1,453,846 rows have raisedDate; 6 negative durations quarantined; claims are conditional on observed loans"
+Current choice set,Active same-sector pool primary,All exit timestamps present; compute at posting with same-time ties excluded
+Time-based checks,14-day precommitted and 16-day calibrated posting pools,Training P75=394.782h (16.45d); 14d remains proposal benchmark
+Recent-history pool,"Age [35,65) days; 7-day half-life","Training P95=826.891h (34.45d), rounded up before modeling; posting-age proxy, not observed exposure or page exit"
+Text,use primary; description robustness,Both 97.31% nonempty; use is the browse-view field and has median 10 tokens vs 93
+Narrative representation,Masked hashed unigram+bigram TF-IDF; recurring 5-gram removal sensitivity,"Rules fit on 2016-2024; no partner ID, so no institutional attribution"
+Pool threshold,Raw n>=10; weighted Kish n>=10; 5/20 sensitivity,"Proposal rule retained; small and empty pools reported, never encoded as zero"
+Model and claim,HDFE with Country + Activity + Week FE; country/week clustered SE,"Conditional association only; Engine scores triage and experiment priority, not treatment effects"

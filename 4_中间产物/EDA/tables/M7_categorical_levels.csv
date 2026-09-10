@@ -1,0 +1,84 @@
+variable,rank,level,n,share_pct
+status,1,funded,1234131,100.0
+sector,1,Agriculture,402595,32.622
+sector,2,Food,259893,21.059
+sector,3,Retail,235332,19.069
+sector,4,Housing,74036,5.999
+sector,5,Services,55101,4.465
+sector,6,Personal Use,42586,3.451
+sector,7,Clothing,35933,2.912
+sector,8,Education,34060,2.76
+sector,9,Clean Energy,21090,1.709
+sector,10,Transportation,16722,1.355
+sector,11,Reuse & Recycle,15349,1.244
+sector,12,Health,14620,1.185
+sector,13,Arts,13518,1.095
+sector,14,Construction,9077,0.735
+sector,15,Manufacturing,4199,0.34
+sector,16,Wholesale,18,0.001
+sector,17,Water,2,0.0
+activity,1,Farming,208526,16.897
+activity,2,General Store,143500,11.628
+activity,3,Pigs,76245,6.178
+activity,4,Personal Housing Expenses,72458,5.871
+activity,5,Retail,41276,3.345
+activity,6,Food Production/Sales,40679,3.296
+activity,7,Fish Selling,33179,2.688
+activity,8,Clothing Sales,31094,2.52
+activity,9,Cereals,30366,2.461
+activity,10,Fruits & Vegetables,29386,2.381
+activity,11,Home Appliances,28636,2.32
+activity,12,Grocery Store,28437,2.304
+activity,13,Agriculture,27089,2.195
+activity,14,Livestock,23199,1.88
+activity,15,Food,21001,1.702
+activity,16,Solar Home Systems,20825,1.687
+activity,17,Dairy,20409,1.654
+activity,18,Food Market,19478,1.578
+activity,19,Tailoring,18482,1.498
+activity,20,Fishing,16088,1.304
+country_name,1,Philippines,430030,34.845
+country_name,2,Kenya,231226,18.736
+country_name,3,Tajikistan,61063,4.948
+country_name,4,Uganda,57301,4.643
+country_name,5,Cambodia,54241,4.395
+country_name,6,Madagascar,43696,3.541
+country_name,7,Pakistan,35266,2.858
+country_name,8,Nicaragua,34552,2.8
+country_name,9,Liberia,24586,1.992
+country_name,10,Togo,24105,1.953
+country_name,11,Kyrgyzstan,19819,1.606
+country_name,12,India,18647,1.511
+country_name,13,Senegal,17999,1.458
+country_name,14,Honduras,17141,1.389
+country_name,15,Sierra Leone,16780,1.36
+country_name,16,Nigeria,13481,1.092
+country_name,17,Ghana,12593,1.02
+country_name,18,Palestine,12510,1.014
+country_name,19,Congo (DRC),10575,0.857
+country_name,20,Timor-Leste,10110,0.819
+gender,1,female,1037442,84.063
+gender,2,male,196689,15.937
+repaymentInterval,1,monthly,1068132,86.549
+repaymentInterval,2,at_end,108055,8.756
+repaymentInterval,3,irregularly,57944,4.695
+week_id,1,2021-08-16,7974,0.646
+week_id,2,2021-06-14,7684,0.623
+week_id,3,2021-09-13,7656,0.62
+week_id,4,2021-05-17,7597,0.616
+week_id,5,2021-04-19,7445,0.603
+week_id,6,2021-10-11,7011,0.568
+week_id,7,2021-07-12,6914,0.56
+week_id,8,2021-02-15,6796,0.551
+week_id,9,2021-11-15,6201,0.502
+week_id,10,2023-04-17,5940,0.481
+week_id,11,2019-12-16,5810,0.471
+week_id,12,2019-10-14,5600,0.454
+week_id,13,2020-02-17,5524,0.448
+week_id,14,2023-12-18,5402,0.438
+week_id,15,2024-03-18,5269,0.427
+week_id,16,2021-03-15,5099,0.413
+week_id,17,2024-04-15,5019,0.407
+week_id,18,2024-09-16,5014,0.406
+week_id,19,2022-05-16,4993,0.405
+week_id,20,2019-11-18,4974,0.403

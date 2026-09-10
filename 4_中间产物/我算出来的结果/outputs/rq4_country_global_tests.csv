@@ -1,0 +1,3 @@
+dimension,channel,groups_tested,q_statistic,degrees_of_freedom,p_value,method,limitation
+country,current,15,111.6036982880048,14,2.7322580455171153e-17,inverse-variance Wald/Q screen across non-overlapping subgroup fits,does not estimate cross-group covariance from shared platform-week shocks; inspect group CIs and BH q-values
+country,recent,15,84.3271005887601,14,4.422700745682061e-12,inverse-variance Wald/Q screen across non-overlapping subgroup fits,does not estimate cross-group covariance from shared platform-week shocks; inspect group CIs and BH q-values

@@ -1,0 +1,11 @@
+{
+  "main_train_n": 1234131,
+  "neighbourhood_definition": "+/- 0.10 IQR on both dimensions",
+  "minimum_endpoint_count_rule": 1000,
+  "joint_support_pass": true,
+  "interpretation": "PASS supports describing the P25/P75 endpoints as empirically populated; it does not establish exchangeability, causality, or intervention validity.",
+  "outputs": [
+    "outputs/joint_support_summary.csv",
+    "outputs/joint_support_quartile_cells.csv"
+  ]
+}

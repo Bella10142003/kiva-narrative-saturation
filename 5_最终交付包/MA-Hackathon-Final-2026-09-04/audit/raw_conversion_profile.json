@@ -1,0 +1,128 @@
+{
+  "input_file": "Kiva_Loans.pkl",
+  "input_size_bytes": 1597994508,
+  "row_count": 1453846,
+  "column_count": 27,
+  "columns": [
+    "activity",
+    "borrowerCount",
+    "city",
+    "country_iso",
+    "country_latitude",
+    "country_longitude",
+    "country_name",
+    "country_ppp",
+    "description",
+    "disbursalDate",
+    "fundraisingDate",
+    "fundsLentInCountry",
+    "gender",
+    "id",
+    "image_url",
+    "latitude",
+    "lenderRepaymentTerm",
+    "loanAmount",
+    "longitude",
+    "name",
+    "raisedDate",
+    "region",
+    "repaymentInterval",
+    "sector",
+    "status",
+    "use",
+    "whySpecial"
+  ],
+  "arrow_schema": "activity: string\nborrowerCount: int64\ncity: string\ncountry_iso: string\ncountry_latitude: double\ncountry_longitude: double\ncountry_name: string\ncountry_ppp: double\ndescription: string\ndisbursalDate: string\nfundraisingDate: string\nfundsLentInCountry: int64\ngender: string\nid: int64\nimage_url: string\nlatitude: double\nlenderRepaymentTerm: int64\nloanAmount: double\nlongitude: double\nname: string\nraisedDate: string\nregion: string\nrepaymentInterval: string\nsector: string\nstatus: string\nuse: string\nwhySpecial: string",
+  "sampled_python_types": {
+    "activity": [
+      "str"
+    ],
+    "borrowerCount": [
+      "int"
+    ],
+    "city": [
+      "str"
+    ],
+    "country_iso": [
+      "str"
+    ],
+    "country_latitude": [
+      "float",
+      "int"
+    ],
+    "country_longitude": [
+      "float",
+      "int"
+    ],
+    "country_name": [
+      "str"
+    ],
+    "country_ppp": [
+      "float"
+    ],
+    "description": [
+      "str"
+    ],
+    "disbursalDate": [
+      "str"
+    ],
+    "fundraisingDate": [
+      "str"
+    ],
+    "fundsLentInCountry": [
+      "int"
+    ],
+    "gender": [
+      "str"
+    ],
+    "id": [
+      "int"
+    ],
+    "image_url": [
+      "str"
+    ],
+    "latitude": [
+      "float",
+      "int"
+    ],
+    "lenderRepaymentTerm": [
+      "int"
+    ],
+    "loanAmount": [
+      "float"
+    ],
+    "longitude": [
+      "float",
+      "int"
+    ],
+    "name": [
+      "str"
+    ],
+    "raisedDate": [
+      "str"
+    ],
+    "region": [
+      "str"
+    ],
+    "repaymentInterval": [
+      "str"
+    ],
+    "sector": [
+      "str"
+    ],
+    "status": [
+      "str"
+    ],
+    "use": [
+      "str"
+    ],
+    "whySpecial": [
+      "str"
+    ]
+  },
+  "part_count": 30,
+  "chunk_rows": 50000,
+  "elapsed_seconds": 30.191,
+  "restricted_unpickler": true,
+  "raw_personal_data_in_final_package": false
+}

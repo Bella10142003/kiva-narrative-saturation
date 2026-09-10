@@ -1,0 +1,9 @@
+step,loans
+valid duration rows,1453840
+wash-in eligible,1434195
+raw text nonempty,1396658
+main pool thresholds,1367540
+main train 2016-2024,1234131
+main holdout 2025,133409
+main holdout 2025 with 35d follow-up,123489
+main 72h eligible,1367129

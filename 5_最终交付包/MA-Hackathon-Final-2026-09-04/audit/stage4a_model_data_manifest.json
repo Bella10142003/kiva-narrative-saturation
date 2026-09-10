@@ -1,0 +1,29 @@
+{
+  "model_data_path": "<PROJECT_ROOT>/5_\u6700\u7ec8\u4ea4\u4ed8\u5305/_rebuild/MA-Hackathon-Final-2026-09-04/data/model_data.parquet",
+  "rows": 1453840,
+  "bytes": 188132614,
+  "feature_parts": [
+    "<PROJECT_ROOT>/5_\u6700\u7ec8\u4ea4\u4ed8\u5305/_rebuild/MA-Hackathon-Final-2026-09-04/data/features/sector_agriculture.parquet",
+    "<PROJECT_ROOT>/5_\u6700\u7ec8\u4ea4\u4ed8\u5305/_rebuild/MA-Hackathon-Final-2026-09-04/data/features/sector_arts.parquet",
+    "<PROJECT_ROOT>/5_\u6700\u7ec8\u4ea4\u4ed8\u5305/_rebuild/MA-Hackathon-Final-2026-09-04/data/features/sector_clean_energy.parquet",
+    "<PROJECT_ROOT>/5_\u6700\u7ec8\u4ea4\u4ed8\u5305/_rebuild/MA-Hackathon-Final-2026-09-04/data/features/sector_clothing.parquet",
+    "<PROJECT_ROOT>/5_\u6700\u7ec8\u4ea4\u4ed8\u5305/_rebuild/MA-Hackathon-Final-2026-09-04/data/features/sector_construction.parquet",
+    "<PROJECT_ROOT>/5_\u6700\u7ec8\u4ea4\u4ed8\u5305/_rebuild/MA-Hackathon-Final-2026-09-04/data/features/sector_education.parquet",
+    "<PROJECT_ROOT>/5_\u6700\u7ec8\u4ea4\u4ed8\u5305/_rebuild/MA-Hackathon-Final-2026-09-04/data/features/sector_entertainment.parquet",
+    "<PROJECT_ROOT>/5_\u6700\u7ec8\u4ea4\u4ed8\u5305/_rebuild/MA-Hackathon-Final-2026-09-04/data/features/sector_food.parquet",
+    "<PROJECT_ROOT>/5_\u6700\u7ec8\u4ea4\u4ed8\u5305/_rebuild/MA-Hackathon-Final-2026-09-04/data/features/sector_health.parquet",
+    "<PROJECT_ROOT>/5_\u6700\u7ec8\u4ea4\u4ed8\u5305/_rebuild/MA-Hackathon-Final-2026-09-04/data/features/sector_housing.parquet",
+    "<PROJECT_ROOT>/5_\u6700\u7ec8\u4ea4\u4ed8\u5305/_rebuild/MA-Hackathon-Final-2026-09-04/data/features/sector_manufacturing.parquet",
+    "<PROJECT_ROOT>/5_\u6700\u7ec8\u4ea4\u4ed8\u5305/_rebuild/MA-Hackathon-Final-2026-09-04/data/features/sector_personal_use.parquet",
+    "<PROJECT_ROOT>/5_\u6700\u7ec8\u4ea4\u4ed8\u5305/_rebuild/MA-Hackathon-Final-2026-09-04/data/features/sector_retail.parquet",
+    "<PROJECT_ROOT>/5_\u6700\u7ec8\u4ea4\u4ed8\u5305/_rebuild/MA-Hackathon-Final-2026-09-04/data/features/sector_reuse_recycle.parquet",
+    "<PROJECT_ROOT>/5_\u6700\u7ec8\u4ea4\u4ed8\u5305/_rebuild/MA-Hackathon-Final-2026-09-04/data/features/sector_sanitation_hygiene.parquet",
+    "<PROJECT_ROOT>/5_\u6700\u7ec8\u4ea4\u4ed8\u5305/_rebuild/MA-Hackathon-Final-2026-09-04/data/features/sector_services.parquet",
+    "<PROJECT_ROOT>/5_\u6700\u7ec8\u4ea4\u4ed8\u5305/_rebuild/MA-Hackathon-Final-2026-09-04/data/features/sector_transportation.parquet",
+    "<PROJECT_ROOT>/5_\u6700\u7ec8\u4ea4\u4ed8\u5305/_rebuild/MA-Hackathon-Final-2026-09-04/data/features/sector_water.parquet",
+    "<PROJECT_ROOT>/5_\u6700\u7ec8\u4ea4\u4ed8\u5305/_rebuild/MA-Hackathon-Final-2026-09-04/data/features/sector_wholesale.parquet"
+  ],
+  "platform_volume_control": "same-platform listings posted during prior 7 days; same timestamp excluded",
+  "scalers_fit_period": "2016-2024 only",
+  "elapsed_seconds": 8.407
+}

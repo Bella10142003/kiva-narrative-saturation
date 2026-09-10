@@ -1,0 +1,3 @@
+status,loans,raised_date_present,raised_date_missing,valid_raised_event,valid_raised_event_pct
+funded,1452209,1452209.0,0.0,1452203.0,99.9996
+refunded,1637,1637.0,0.0,1637.0,100.0

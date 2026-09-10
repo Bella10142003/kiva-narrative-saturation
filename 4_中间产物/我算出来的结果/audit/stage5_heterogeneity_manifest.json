@@ -1,0 +1,41 @@
+{
+  "year_groups": 9,
+  "sector_minimum_training_n": 5000,
+  "sectors_selected": [
+    "Agriculture",
+    "Food",
+    "Retail",
+    "Housing",
+    "Services",
+    "Personal Use",
+    "Clothing",
+    "Education",
+    "Clean Energy",
+    "Transportation",
+    "Reuse & Recycle",
+    "Health",
+    "Arts",
+    "Construction"
+  ],
+  "countries_selected_by_training_volume": [
+    "Philippines",
+    "Kenya",
+    "Tajikistan",
+    "Uganda",
+    "Cambodia",
+    "Madagascar",
+    "Pakistan",
+    "Nicaragua",
+    "Liberia",
+    "Togo",
+    "Kyrgyzstan",
+    "India",
+    "Senegal",
+    "Honduras",
+    "Sierra Leone"
+  ],
+  "multiple_testing": "Benjamini-Hochberg separately within each dimension and channel",
+  "global_test": "inverse-variance Wald/Q screening across non-overlapping subgroup estimates",
+  "failures": [],
+  "elapsed_seconds": 13.331
+}

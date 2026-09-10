@@ -1,0 +1,41 @@
+{
+  "elapsed_seconds": 33.1,
+  "tables": [
+    "A1_sample_flow.csv",
+    "A2_by_year_coverage.csv",
+    "A3_missingness_main_sample.csv",
+    "B1_univariate_distributions.csv",
+    "B2_categorical_top_levels.csv",
+    "B3_outcome_tail_diagnostics.csv",
+    "C1_correlation_pairs.csv",
+    "C2_correlation_matrix_pearson.csv",
+    "C3_vif_collinearity.csv",
+    "D1_fe_demeaned_correlation_pairs.csv",
+    "D2_variance_absorbed_by_FE.csv",
+    "E1_rq1_CxH_quintile_grid.csv",
+    "E2_rq1_H_decile_profile_by_C_tercile.csv",
+    "E3_focal_decile_profiles.csv",
+    "F1_rq2_VxG_quintile_grid.csv",
+    "F2_raw_vs_residual_text_representation.csv",
+    "F3_channel_separability.csv",
+    "F4_boilerplate_share_profile.csv",
+    "G1_rq3_by_year_moments_and_slopes.csv",
+    "G2_rq3_year_quantile_drift.csv",
+    "H1_rq4_by_sector.csv",
+    "H2_rq4_by_country.csv",
+    "H3_variance_decomposition.csv",
+    "H4_sector_by_year_cells.csv",
+    "I1_counterfactual_support.csv",
+    "I2_train_vs_holdout_drift.csv"
+  ],
+  "figures": [
+    "J1_outcome_distribution.png",
+    "J2_focal_variable_distributions.png",
+    "J3_interaction_heatmaps.png",
+    "J4_rq1_H_profile_by_C.png",
+    "J5_rq3_year_evolution.png",
+    "J6_rq4_sector_slopes.png",
+    "J7_correlation_heatmaps.png",
+    "J8_train_vs_holdout_drift.png"
+  ]
+}

@@ -1,0 +1,4 @@
+level,corr_meanH_vs_meanlogfh,spearman
+between-sector (n=15 sectors),-0.8753,-0.6714
+pooled loan-level (raw),-0.0668,-0.0172
+within-sector (sector-demeaned),0.0539,

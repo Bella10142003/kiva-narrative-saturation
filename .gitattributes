@@ -1,0 +1,15 @@
+* text=auto eol=lf
+
+*.pdf   binary
+*.pptx  binary
+*.potx  binary
+*.docx  binary
+*.xlsx  binary
+*.png   binary
+*.npy   binary
+*.zip   binary
+
+# 交付包与中间产物不参与 GitHub 语言统计
+5_最终交付包/**   linguist-documentation
+4_中间产物/**     linguist-documentation
+*.ipynb           linguist-detectable

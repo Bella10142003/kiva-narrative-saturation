@@ -1,0 +1,2 @@
+max_hours,max_days,n_within_1pct_of_max,n_over_1000h,pct_over_1000h,n_over_2000h,pct_over_2000h,p999_hours,gap_p999_to_max_hours
+4160.5992,173.3583,1,25050,2.0298,83,0.0067,1171.2846,2989.3146

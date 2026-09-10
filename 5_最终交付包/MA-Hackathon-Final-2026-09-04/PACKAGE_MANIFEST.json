@@ -1,0 +1,28 @@
+{
+  "package": "MA-Hackathon-Final-2026-09-04",
+  "generated_at_local": "2026-08-28T00:51:00+1000",
+  "source_archive_sha256": "c9eb61b5702f41daedb244640edb72f50844ef78612172d5048f6ce56055029a",
+  "artifact_files_hashed": 145,
+  "artifact_bytes_uncompressed": 8625010,
+  "manifest_scope": "MANIFEST_SHA256.txt hashes every packaged artifact except the two generated package metadata members",
+  "privacy_boundary": {
+    "source_material": "excluded",
+    "row_level_data": "excluded",
+    "per_loan_scores": "excluded",
+    "small_country_counts": "excluded",
+    "local_paths_in_text_copies": "redacted",
+    "student_derived_seed": "replaced by neutral seed 20260904 and affected outputs regenerated"
+  },
+  "validation": {
+    "status": "PASS",
+    "checks": {
+      "unique_members": true,
+      "safe_relative_paths": true,
+      "no_source_or_row_level_data": true,
+      "no_dev_cache_or_redundant_inspection": true,
+      "no_local_path_personal_seed_or_credentials": true,
+      "required_deliverables_present": true
+    },
+    "errors": []
+  }
+}

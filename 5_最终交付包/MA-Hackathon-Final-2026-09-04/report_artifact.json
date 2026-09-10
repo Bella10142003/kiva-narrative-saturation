@@ -1,0 +1,1064 @@
+{
+  "surface": "report",
+  "manifest": {
+    "version": 1,
+    "surface": "report",
+    "title": "当每个故事听起来都一样",
+    "description": "Kiva 当前叙事竞争、recent-listing proxy 与 2025 留出验证的技术报告",
+    "generatedAt": "2026-08-28T12:00:00Z",
+    "cards": [
+      {
+        "id": "current_time_card",
+        "dataset": "headline",
+        "sourceId": "scenario",
+        "description": "Back-transform of the log1p-hours scenario; this is not an arithmetic mean duration.",
+        "metrics": [
+          {
+            "label": "Geo. mean(1 + hours) change (%)",
+            "field": "current_geo_1p_hours_pct",
+            "format": "number",
+            "signed": true
+          }
+        ]
+      },
+      {
+        "id": "current_72_card",
+        "dataset": "headline",
+        "sourceId": "scenario",
+        "description": "Percentage-point change in 72-hour funding probability.",
+        "metrics": [
+          {
+            "label": "72-hour association (pp)",
+            "field": "current_72_pp",
+            "format": "number",
+            "signed": true
+          }
+        ]
+      },
+      {
+        "id": "recent_time_card",
+        "dataset": "headline",
+        "sourceId": "scenario",
+        "description": "Recent-listing P25→P75 log-time contrast; confidence interval crosses zero.",
+        "metrics": [
+          {
+            "label": "Recent geo. mean(1 + hours) change (%)",
+            "field": "recent_geo_1p_hours_pct",
+            "format": "number",
+            "signed": true
+          }
+        ]
+      },
+      {
+        "id": "sample_card",
+        "dataset": "headline",
+        "sourceId": "sample",
+        "description": "Main HDFE estimation sample, 2016–2024.",
+        "metrics": [
+          {
+            "label": "Training loans (M)",
+            "field": "train_loans_m",
+            "format": "number"
+          }
+        ]
+      }
+    ],
+    "charts": [
+      {
+        "id": "channel_time_chart",
+        "title": "Joint saturation scenarios",
+        "subtitle": "Change in the conditional geometric mean of 1 + funding hours, 2016–2024",
+        "showDescription": true,
+        "type": "bar",
+        "dataset": "channel_time",
+        "sourceId": "scenario",
+        "layout": "full",
+        "valueFormat": "number",
+        "unit": "%",
+        "encodings": {
+          "x": {
+            "field": "channel_label",
+            "type": "nominal",
+            "label": "Attention channel"
+          },
+          "y": {
+            "field": "translated_effect",
+            "type": "quantitative",
+            "label": "Geo. mean(1 + hours) change",
+            "unit": "%"
+          }
+        },
+        "referenceLines": [
+          {
+            "axis": "y",
+            "value": 0,
+            "label": "No change"
+          }
+        ]
+      },
+      {
+        "id": "robust_chart",
+        "title": "Interaction estimates across specifications",
+        "subtitle": "Standardised HDFE coefficients; confidence intervals are shown in the adjacent table",
+        "showDescription": true,
+        "type": "bar",
+        "dataset": "robustness",
+        "sourceId": "robustness",
+        "layout": "full",
+        "valueFormat": "number",
+        "encodings": {
+          "x": {
+            "field": "specification",
+            "type": "nominal",
+            "label": "Specification"
+          },
+          "y": {
+            "field": "estimate",
+            "type": "quantitative",
+            "label": "Interaction coefficient"
+          },
+          "color": {
+            "field": "channel",
+            "type": "nominal",
+            "label": "Channel"
+          }
+        },
+        "referenceLines": [
+          {
+            "axis": "y",
+            "value": 0,
+            "label": "Null"
+          }
+        ]
+      },
+      {
+        "id": "year_chart",
+        "title": "Year-specific joint scenario contrasts",
+        "subtitle": "P25→P75 change in conditional geometric mean of 1 + funding hours",
+        "showDescription": true,
+        "type": "line",
+        "dataset": "year_effects",
+        "sourceId": "year",
+        "layout": "full",
+        "valueFormat": "number",
+        "unit": "%",
+        "encodings": {
+          "x": {
+            "field": "year",
+            "type": "ordinal",
+            "label": "Training year"
+          },
+          "y": {
+            "field": "scenario_percent_change",
+            "type": "quantitative",
+            "label": "Geo. mean(1 + hours) change",
+            "unit": "%"
+          },
+          "color": {
+            "field": "channel",
+            "type": "nominal",
+            "label": "Channel"
+          }
+        },
+        "referenceLines": [
+          {
+            "axis": "y",
+            "value": 0,
+            "label": "No change"
+          }
+        ]
+      },
+      {
+        "id": "holdout_chart",
+        "title": "2025 relative deterioration after adding narrative features",
+        "subtitle": "Positive values are worse; negative log-loss is the only slight improvement",
+        "showDescription": true,
+        "type": "bar",
+        "dataset": "holdout_delta",
+        "sourceId": "holdout",
+        "layout": "full",
+        "valueFormat": "number",
+        "unit": "%",
+        "encodings": {
+          "x": {
+            "field": "metric",
+            "type": "nominal",
+            "label": "Metric"
+          },
+          "y": {
+            "field": "relative_deterioration_pct",
+            "type": "quantitative",
+            "label": "Relative deterioration",
+            "unit": "%"
+          }
+        },
+        "referenceLines": [
+          {
+            "axis": "y",
+            "value": 0,
+            "label": "No difference"
+          }
+        ]
+      }
+    ],
+    "tables": [
+      {
+        "id": "scenario_table",
+        "title": "Scenario estimates and 95% intervals",
+        "subtitle": "Joint P25→P75 contrasts in the main training sample",
+        "showDescription": true,
+        "dataset": "scenario",
+        "sourceId": "scenario",
+        "layout": "full",
+        "density": "spacious",
+        "defaultSort": {
+          "field": "channel",
+          "direction": "asc"
+        },
+        "columns": [
+          {
+            "field": "channel",
+            "label": "Channel",
+            "type": "text"
+          },
+          {
+            "field": "outcome",
+            "label": "Outcome",
+            "type": "text"
+          },
+          {
+            "field": "translated_effect",
+            "label": "Effect",
+            "format": "number"
+          },
+          {
+            "field": "translated_ci_low",
+            "label": "CI low",
+            "format": "number"
+          },
+          {
+            "field": "translated_ci_high",
+            "label": "CI high",
+            "format": "number"
+          },
+          {
+            "field": "translated_unit",
+            "label": "Unit",
+            "type": "text"
+          },
+          {
+            "field": "n",
+            "label": "N",
+            "format": "compact"
+          }
+        ]
+      },
+      {
+        "id": "robust_table",
+        "title": "Robustness coefficient detail",
+        "subtitle": "Selected raw, residual, posting-window and completed-lag specifications",
+        "showDescription": true,
+        "dataset": "robustness",
+        "sourceId": "robustness",
+        "layout": "full",
+        "density": "dense",
+        "defaultSort": {
+          "field": "specification",
+          "direction": "asc"
+        },
+        "columns": [
+          {
+            "field": "specification",
+            "label": "Specification",
+            "type": "text"
+          },
+          {
+            "field": "channel",
+            "label": "Channel",
+            "type": "text"
+          },
+          {
+            "field": "estimate",
+            "label": "Estimate",
+            "format": "number"
+          },
+          {
+            "field": "ci_low",
+            "label": "CI low",
+            "format": "number"
+          },
+          {
+            "field": "ci_high",
+            "label": "CI high",
+            "format": "number"
+          },
+          {
+            "field": "p_value",
+            "label": "p-value",
+            "format": "number"
+          },
+          {
+            "field": "n",
+            "label": "N",
+            "format": "compact"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "scenario",
+        "label": "Scenario contrasts",
+        "path": "outputs/scenario_contrasts.csv",
+        "query": {
+          "engine": "duckdb",
+          "language": "sql",
+          "sql": "SELECT * FROM read_csv_auto('outputs/scenario_contrasts.csv')",
+          "description": "Loads the reviewed joint P25-to-P75 current and recent-listing scenario estimates with explicit units.",
+          "executed_at": "2026-08-28T12:00:00Z",
+          "tables_used": [
+            "outputs/scenario_contrasts.csv"
+          ]
+        }
+      },
+      {
+        "id": "robustness",
+        "label": "Robustness specifications",
+        "path": "outputs/robustness.csv",
+        "query": {
+          "engine": "duckdb",
+          "language": "sql",
+          "sql": "SELECT * FROM read_csv_auto('outputs/robustness.csv')",
+          "description": "Loads the reviewed HDFE robustness coefficient table.",
+          "executed_at": "2026-08-28T12:00:00Z",
+          "tables_used": [
+            "outputs/robustness.csv"
+          ]
+        }
+      },
+      {
+        "id": "holdout",
+        "label": "2025 holdout validation",
+        "path": "outputs/holdout_validation.csv",
+        "query": {
+          "engine": "duckdb",
+          "language": "sql",
+          "sql": "SELECT * FROM read_csv_auto('outputs/holdout_validation.csv')",
+          "description": "Loads the reviewed controls-only and narrative-enhanced out-of-time metrics.",
+          "executed_at": "2026-08-28T12:00:00Z",
+          "tables_used": [
+            "outputs/holdout_validation.csv"
+          ]
+        }
+      },
+      {
+        "id": "year",
+        "label": "Year-specific effects",
+        "path": "outputs/rq3_year_effects.csv",
+        "query": {
+          "engine": "duckdb",
+          "language": "sql",
+          "sql": "SELECT * FROM read_csv_auto('outputs/rq3_year_effects.csv')",
+          "description": "Loads the reviewed year-specific scenario effects and uncertainty.",
+          "executed_at": "2026-08-28T12:00:00Z",
+          "tables_used": [
+            "outputs/rq3_year_effects.csv"
+          ]
+        }
+      },
+      {
+        "id": "support",
+        "label": "Joint support diagnostic",
+        "path": "outputs/joint_support_summary.csv",
+        "query": {
+          "engine": "duckdb",
+          "language": "sql",
+          "sql": "SELECT * FROM read_csv_auto('outputs/joint_support_summary.csv')",
+          "description": "Loads the endpoint-neighbourhood support counts.",
+          "executed_at": "2026-08-28T12:00:00Z",
+          "tables_used": [
+            "outputs/joint_support_summary.csv"
+          ]
+        }
+      },
+      {
+        "id": "sample",
+        "label": "Model sample flow",
+        "path": "outputs/model_sample_flow.csv",
+        "query": {
+          "engine": "duckdb",
+          "language": "sql",
+          "sql": "SELECT * FROM read_csv_auto('outputs/model_sample_flow.csv')",
+          "description": "Loads the reviewed analytical sample counts.",
+          "executed_at": "2026-08-28T12:00:00Z",
+          "tables_used": [
+            "outputs/model_sample_flow.csv"
+          ]
+        }
+      },
+      {
+        "id": "description",
+        "label": "Description sensitivity",
+        "path": "outputs/description_robustness.csv",
+        "query": {
+          "engine": "duckdb",
+          "language": "sql",
+          "sql": "SELECT * FROM read_csv_auto('outputs/description_robustness.csv')",
+          "description": "Loads the reviewed description-text sensitivity model.",
+          "executed_at": "2026-08-28T12:00:00Z",
+          "tables_used": [
+            "outputs/description_robustness.csv"
+          ]
+        }
+      },
+      {
+        "id": "unsw",
+        "label": "UNSW Marketing Analytics Hackathon 2026",
+        "href": "https://www.unsw.edu.au/business/our-schools/marketing/news-events/student-events/MA-hackathon"
+      }
+    ],
+    "blocks": [
+      {
+        "id": "title",
+        "type": "markdown",
+        "body": "# 当每个故事听起来都一样"
+      },
+      {
+        "id": "technical_summary",
+        "type": "markdown",
+        "body": "## 技术摘要\n\n**最可靠的注意力信号发生在当下市场。** 当前同板块贷款又多、focal-to-pool lexical overlap 又高时，log-time 与 72 小时结果都更差；recent-listing posting-age proxy 不确定，2025 也没有提供一致的增量预测价值。结论因此指向平台实验，而不是借款人评分。"
+      },
+      {
+        "id": "headline_metrics",
+        "type": "metric-strip",
+        "cardIds": [
+          "current_time_card",
+          "current_72_card",
+          "recent_time_card",
+          "sample_card"
+        ]
+      },
+      {
+        "id": "scope",
+        "type": "markdown",
+        "body": "## 1. 数据与识别边界\n\n官方提取物覆盖 2016–2025。主分析只在 2016–2024 拟合文本、scaler 与 HDFE，并保留 2025 做 out-of-time 检验。每条有效记录都有 raisedDate，因此结果描述的是 extract 中已观察到 raisedDate 的贷款，而不是全部 posted loans 的成功概率。"
+      },
+      {
+        "id": "main_result",
+        "type": "markdown",
+        "sourceId": "scenario",
+        "body": "## 2. 当前竞争是强烈的诊断信号\n\n当前 volume 与 focal-to-pool lexical overlap 联合从 P25 移到 P75 时，`1 + funding hours` 条件几何均值增加 **124.35%**（95% CI 103.71% 至 147.08%），72 小时融资概率下降 **14.68pp**。前者不是算术平均融资时长；两者都是条件相关性，不是干预预测。"
+      },
+      {
+        "id": "channel_chart",
+        "type": "chart",
+        "chartId": "channel_time_chart"
+      },
+      {
+        "id": "scenario_exact",
+        "type": "table",
+        "tableId": "scenario_table"
+      },
+      {
+        "id": "representation",
+        "type": "markdown",
+        "body": "## 3. Recurring language 可能贡献当前信号\n\n移除 recurring language 后，current interaction 估计约减半并失去常规显著性；masked description 则再次呈现显著 current interaction、但不支持 recent interaction。数据没有 partner ID，因此不能把该语言归因于具体机构，也不能证明其造成了多少效果。"
+      },
+      {
+        "id": "robust_chart_block",
+        "type": "chart",
+        "chartId": "robust_chart"
+      },
+      {
+        "id": "robust_exact",
+        "type": "table",
+        "tableId": "robust_table"
+      },
+      {
+        "id": "recent",
+        "type": "markdown",
+        "sourceId": "scenario",
+        "body": "## 4. Recent-listing proxy 不支持稳健的 average wear-out\n\nPosting-age proxy 的联合 P25→P75 log-time back-transform 为 **-1.42%**（95% CI -15.81% 至 15.43%），72 小时结果为 **-0.51pp**（95% CI -3.86 至 2.84）。主池不观测 exposure 或 page exit；局部 interaction 与联合净情景也回答不同问题。"
+      },
+      {
+        "id": "heterogeneity",
+        "type": "markdown",
+        "body": "## 5. 时间异质性存在，但不适合排名\n\nYear、sector 与 country 的关联会变化。置信区间和跨组协方差限制意味着这些结果应作为实验分层线索，而不是国家、板块或借款人的 targeting 规则。"
+      },
+      {
+        "id": "year_chart_block",
+        "type": "chart",
+        "chartId": "year_chart"
+      },
+      {
+        "id": "holdout",
+        "type": "markdown",
+        "sourceId": "holdout",
+        "body": "## 6. 2025 留出结果划定 no-deployment 边界\n\n叙事模型在 log-hour MAE（0.9822 vs 0.9663）、Brier（0.1370 vs 0.1357）与 AUC（0.8921 vs 0.8986）上没有超过 controls-only；log-loss 略好。差异未提供 paired uncertainty，因此不声称显著变差。"
+      },
+      {
+        "id": "holdout_chart_block",
+        "type": "chart",
+        "chartId": "holdout_chart"
+      },
+      {
+        "id": "limitations",
+        "type": "markdown",
+        "body": "## 7. 哪些不确定性会改变结论\n\n缺少 impressions、ranking、clicks、promotion、image quality 与 partner ID；active pool 仍可能内生；recent 主池只是 posting-age proxy；TF–IDF 只测 lexical repetition；raised-only extract 限制外推；country/sector heterogeneity 只覆盖可估计子集；2025 显示 temporal drift。这些限制共同排除 causal 和 deployment 解释。"
+      },
+      {
+        "id": "recommendation",
+        "type": "markdown",
+        "body": "## 8. 建议：改变故事周围的市场，再前瞻验证\n\n1. 在 high-current-saturation 状态下随机测试 staggered / diversified exposure。\n2. 单独测试 partner-approved template alternatives。\n3. Primary outcomes 为 time-to-funding 与 72-hour probability；guardrails 包括 total funding、公平性与 borrower workload。\n4. 不使用 borrower ranking、approval 或 penalty。"
+      },
+      {
+        "id": "questions",
+        "type": "markdown",
+        "body": "## 9. 下一步问题\n\n加入真实 exposure/ranking logs 后 current association 还剩多少？随机改变 listing mix 能否加快融资且不把注意力从其他弱势 borrower 转移走？在这两个问题被 prospective evidence 回答之前，不应扩大部署。"
+      }
+    ]
+  },
+  "snapshot": {
+    "version": 1,
+    "generatedAt": "2026-08-28T12:00:00Z",
+    "status": "ready",
+    "datasets": {
+      "headline": [
+        {
+          "current_geo_1p_hours_pct": 124.3508372002,
+          "current_geo_1p_hours_ci_low": 103.7109078429,
+          "current_geo_1p_hours_ci_high": 147.0819981385,
+          "current_72_pp": -14.6818123579,
+          "recent_geo_1p_hours_pct": -1.420761278,
+          "train_loans_m": 1.234131,
+          "holdout_auc_delta": -0.006504365
+        }
+      ],
+      "channel_time": [
+        {
+          "channel_label": "Current live market",
+          "translated_effect": 124.3508372002,
+          "translated_ci_low": 103.7109078429,
+          "translated_ci_high": 147.0819981385
+        },
+        {
+          "channel_label": "Recent-listing proxy",
+          "translated_effect": -1.420761278,
+          "translated_ci_low": -15.8110579264,
+          "translated_ci_high": 15.4292483983
+        }
+      ],
+      "scenario": [
+        {
+          "channel": "current",
+          "outcome": "log_funding_hours",
+          "translated_effect": 124.3508372002,
+          "translated_ci_low": 103.7109078429,
+          "translated_ci_high": 147.0819981385,
+          "translated_unit": "percent change in conditional geometric mean of (1 + funding hours)",
+          "n": 1234131,
+          "channel_label": "Current live market"
+        },
+        {
+          "channel": "recent",
+          "outcome": "log_funding_hours",
+          "translated_effect": -1.420761278,
+          "translated_ci_low": -15.8110579264,
+          "translated_ci_high": 15.4292483983,
+          "translated_unit": "percent change in conditional geometric mean of (1 + funding hours)",
+          "n": 1234131,
+          "channel_label": "Recent-listing proxy"
+        },
+        {
+          "channel": "current",
+          "outcome": "funded_within_72h",
+          "translated_effect": -14.6818123579,
+          "translated_ci_low": -17.6894690683,
+          "translated_ci_high": -11.6741556474,
+          "translated_unit": "percentage-point change in 72h fast-funding rate",
+          "n": 1234131,
+          "channel_label": "Current live market"
+        },
+        {
+          "channel": "recent",
+          "outcome": "funded_within_72h",
+          "translated_effect": -0.5095373438,
+          "translated_ci_low": -3.8590795263,
+          "translated_ci_high": 2.8400048387,
+          "translated_unit": "percentage-point change in 72h fast-funding rate",
+          "n": 1234131,
+          "channel_label": "Recent-listing proxy"
+        }
+      ],
+      "robustness": [
+        {
+          "specification": "Active · masked use",
+          "channel": "Current",
+          "estimate": 0.1016646911,
+          "ci_low": 0.0356713349,
+          "ci_high": 0.1676580472,
+          "p_value": 0.003307877,
+          "n": 1234131
+        },
+        {
+          "specification": "Active · masked use",
+          "channel": "Recent",
+          "estimate": 0.0417475495,
+          "ci_low": 0.0143265033,
+          "ci_high": 0.0691685956,
+          "p_value": 0.0036583696,
+          "n": 1234131
+        },
+        {
+          "specification": "Active · recurring removed",
+          "channel": "Current",
+          "estimate": 0.0523192337,
+          "ci_low": -0.0157704466,
+          "ci_high": 0.120408914,
+          "p_value": 0.1287206861,
+          "n": 1149206
+        },
+        {
+          "specification": "Active · recurring removed",
+          "channel": "Recent",
+          "estimate": 0.0584633108,
+          "ci_low": 0.026083432,
+          "ci_high": 0.0908431897,
+          "p_value": 0.0007078018,
+          "n": 1149206
+        },
+        {
+          "specification": "14-day posting",
+          "channel": "Current",
+          "estimate": 0.0893345798,
+          "ci_low": 0.0494241395,
+          "ci_high": 0.1292450201,
+          "p_value": 4.6334e-05,
+          "n": 1256347
+        },
+        {
+          "specification": "14-day posting",
+          "channel": "Recent",
+          "estimate": 0.0260479681,
+          "ci_low": -0.0061432989,
+          "ci_high": 0.058239235,
+          "p_value": 0.1101381905,
+          "n": 1256347
+        },
+        {
+          "specification": "16-day posting",
+          "channel": "Current",
+          "estimate": 0.0993783968,
+          "ci_low": 0.0602410387,
+          "ci_high": 0.1385157549,
+          "p_value": 6.2823e-06,
+          "n": 1256576
+        },
+        {
+          "specification": "16-day posting",
+          "channel": "Recent",
+          "estimate": 0.0175775853,
+          "ci_low": -0.0153830279,
+          "ci_high": 0.0505381985,
+          "p_value": 0.2885027015,
+          "n": 1256576
+        },
+        {
+          "specification": "Completed-only lag",
+          "channel": "Current",
+          "estimate": 0.1025461813,
+          "ci_low": 0.0369292768,
+          "ci_high": 0.1681630859,
+          "p_value": 0.002919226,
+          "n": 1234131
+        },
+        {
+          "specification": "Completed-only lag",
+          "channel": "Recent",
+          "estimate": 0.0402389778,
+          "ci_low": 0.0124939266,
+          "ci_high": 0.0679840289,
+          "p_value": 0.0054362385,
+          "n": 1234131
+        }
+      ],
+      "year_effects": [
+        {
+          "year": 2016,
+          "channel": "Current",
+          "scenario_percent_change": 70.4048851208,
+          "scenario_ci_low": 40.4096020507,
+          "scenario_ci_high": 106.8079707438,
+          "n": 102466,
+          "scenario_unit": "percent change in conditional geometric mean of (1 + funding hours)"
+        },
+        {
+          "year": 2016,
+          "channel": "Recent",
+          "scenario_percent_change": 37.1521439256,
+          "scenario_ci_low": 9.0457260593,
+          "scenario_ci_high": 72.5029605761,
+          "n": 102466,
+          "scenario_unit": "percent change in conditional geometric mean of (1 + funding hours)"
+        },
+        {
+          "year": 2017,
+          "channel": "Current",
+          "scenario_percent_change": 59.30276785,
+          "scenario_ci_low": 32.7662314113,
+          "scenario_ci_high": 91.1432717108,
+          "n": 153560,
+          "scenario_unit": "percent change in conditional geometric mean of (1 + funding hours)"
+        },
+        {
+          "year": 2017,
+          "channel": "Recent",
+          "scenario_percent_change": 35.3860204888,
+          "scenario_ci_low": 13.259828068,
+          "scenario_ci_high": 61.8347374921,
+          "n": 153560,
+          "scenario_unit": "percent change in conditional geometric mean of (1 + funding hours)"
+        },
+        {
+          "year": 2018,
+          "channel": "Current",
+          "scenario_percent_change": 264.8801786316,
+          "scenario_ci_low": 137.3995321893,
+          "scenario_ci_high": 460.8163736907,
+          "n": 145008,
+          "scenario_unit": "percent change in conditional geometric mean of (1 + funding hours)"
+        },
+        {
+          "year": 2018,
+          "channel": "Recent",
+          "scenario_percent_change": 13.0626449419,
+          "scenario_ci_low": -18.7760584499,
+          "scenario_ci_high": 57.3816960529,
+          "n": 145008,
+          "scenario_unit": "percent change in conditional geometric mean of (1 + funding hours)"
+        },
+        {
+          "year": 2019,
+          "channel": "Current",
+          "scenario_percent_change": 88.7711244423,
+          "scenario_ci_low": 61.515123833,
+          "scenario_ci_high": 120.6266297395,
+          "n": 133897,
+          "scenario_unit": "percent change in conditional geometric mean of (1 + funding hours)"
+        },
+        {
+          "year": 2019,
+          "channel": "Recent",
+          "scenario_percent_change": 25.6428507141,
+          "scenario_ci_low": 9.3046859838,
+          "scenario_ci_high": 44.4231397169,
+          "n": 133897,
+          "scenario_unit": "percent change in conditional geometric mean of (1 + funding hours)"
+        },
+        {
+          "year": 2020,
+          "channel": "Current",
+          "scenario_percent_change": 74.469665973,
+          "scenario_ci_low": 53.2548882794,
+          "scenario_ci_high": 98.6211643001,
+          "n": 127092,
+          "scenario_unit": "percent change in conditional geometric mean of (1 + funding hours)"
+        },
+        {
+          "year": 2020,
+          "channel": "Recent",
+          "scenario_percent_change": -18.549275439,
+          "scenario_ci_low": -34.1157192701,
+          "scenario_ci_high": 0.6950437648,
+          "n": 127092,
+          "scenario_unit": "percent change in conditional geometric mean of (1 + funding hours)"
+        },
+        {
+          "year": 2021,
+          "channel": "Current",
+          "scenario_percent_change": 93.6231162475,
+          "scenario_ci_low": 67.4933364732,
+          "scenario_ci_high": 123.829269479,
+          "n": 153895,
+          "scenario_unit": "percent change in conditional geometric mean of (1 + funding hours)"
+        },
+        {
+          "year": 2021,
+          "channel": "Recent",
+          "scenario_percent_change": -10.1035033877,
+          "scenario_ci_low": -21.951776763,
+          "scenario_ci_high": 3.5434218486,
+          "n": 153895,
+          "scenario_unit": "percent change in conditional geometric mean of (1 + funding hours)"
+        },
+        {
+          "year": 2022,
+          "channel": "Current",
+          "scenario_percent_change": 84.0850222347,
+          "scenario_ci_low": 45.7296206976,
+          "scenario_ci_high": 132.5353984243,
+          "n": 136841,
+          "scenario_unit": "percent change in conditional geometric mean of (1 + funding hours)"
+        },
+        {
+          "year": 2022,
+          "channel": "Recent",
+          "scenario_percent_change": 17.138249063,
+          "scenario_ci_low": -1.359549012,
+          "scenario_ci_high": 39.1048931357,
+          "n": 136841,
+          "scenario_unit": "percent change in conditional geometric mean of (1 + funding hours)"
+        },
+        {
+          "year": 2023,
+          "channel": "Current",
+          "scenario_percent_change": 107.8879235672,
+          "scenario_ci_low": 76.7325452457,
+          "scenario_ci_high": 144.535542138,
+          "n": 141311,
+          "scenario_unit": "percent change in conditional geometric mean of (1 + funding hours)"
+        },
+        {
+          "year": 2023,
+          "channel": "Recent",
+          "scenario_percent_change": 15.1138053003,
+          "scenario_ci_low": -0.6277319443,
+          "scenario_ci_high": 33.3489556995,
+          "n": 141311,
+          "scenario_unit": "percent change in conditional geometric mean of (1 + funding hours)"
+        },
+        {
+          "year": 2024,
+          "channel": "Current",
+          "scenario_percent_change": 92.6978678106,
+          "scenario_ci_low": 42.474795769,
+          "scenario_ci_high": 160.6248218033,
+          "n": 140028,
+          "scenario_unit": "percent change in conditional geometric mean of (1 + funding hours)"
+        },
+        {
+          "year": 2024,
+          "channel": "Recent",
+          "scenario_percent_change": 11.8278418394,
+          "scenario_ci_low": -3.5080082757,
+          "scenario_ci_high": 29.6010786696,
+          "n": 140028,
+          "scenario_unit": "percent change in conditional geometric mean of (1 + funding hours)"
+        }
+      ],
+      "holdout_delta": [
+        {
+          "metric": "Log-hour MAE",
+          "controls_only": 0.9663069984,
+          "controls_plus_narrative": 0.9821963772,
+          "relative_deterioration_pct": 1.6443406516
+        },
+        {
+          "metric": "Hour MAE",
+          "controls_only": 168.2774509338,
+          "controls_plus_narrative": 168.6076299123,
+          "relative_deterioration_pct": 0.1962110649
+        },
+        {
+          "metric": "Brier score",
+          "controls_only": 0.1356543443,
+          "controls_plus_narrative": 0.1369987425,
+          "relative_deterioration_pct": 0.99104697
+        },
+        {
+          "metric": "ROC AUC",
+          "controls_only": 0.8985686101,
+          "controls_plus_narrative": 0.8920642451,
+          "relative_deterioration_pct": 0.7238584677
+        },
+        {
+          "metric": "Log loss",
+          "controls_only": 0.431706404,
+          "controls_plus_narrative": 0.430117191,
+          "relative_deterioration_pct": -0.36812356
+        }
+      ],
+      "support": [
+        {
+          "channel": "current",
+          "endpoint": "P25_P25",
+          "left_variable": "C_active",
+          "right_variable": "H_active_raw",
+          "left_target": 5.6419070709,
+          "right_target": 0.0261992882,
+          "left_halfwidth_0_10_iqr": 0.1520490426,
+          "right_halfwidth_0_10_iqr": 0.0079055891,
+          "n_near_endpoint": 12310,
+          "share_main_train": 0.0099746299,
+          "median_funding_hours_near": 39.5309722222,
+          "fast_72h_rate_near": 0.5675060926,
+          "left_right_correlation": -0.1531791415,
+          "main_train_n": 1234131
+        },
+        {
+          "channel": "current",
+          "endpoint": "P75_P75",
+          "left_variable": "C_active",
+          "right_variable": "H_active_raw",
+          "left_target": 7.1623974974,
+          "right_target": 0.1052551788,
+          "left_halfwidth_0_10_iqr": 0.1520490426,
+          "right_halfwidth_0_10_iqr": 0.0079055891,
+          "n_near_endpoint": 7953,
+          "share_main_train": 0.0064442105,
+          "median_funding_hours_near": 128.7991666667,
+          "fast_72h_rate_near": 0.3980887715,
+          "left_right_correlation": -0.1531791415,
+          "main_train_n": 1234131
+        },
+        {
+          "channel": "recent",
+          "endpoint": "P25_P25",
+          "left_variable": "V_lag",
+          "right_variable": "G_lag_raw",
+          "left_target": 5.6350387702,
+          "right_target": 0.0261154316,
+          "left_halfwidth_0_10_iqr": 0.1332431979,
+          "right_halfwidth_0_10_iqr": 0.0070926601,
+          "n_near_endpoint": 4716,
+          "share_main_train": 0.0038213123,
+          "median_funding_hours_near": 134.4334722222,
+          "fast_72h_rate_near": 0.4128498728,
+          "left_right_correlation": -0.2286044545,
+          "main_train_n": 1234131
+        },
+        {
+          "channel": "recent",
+          "endpoint": "P75_P75",
+          "left_variable": "V_lag",
+          "right_variable": "G_lag_raw",
+          "left_target": 6.9674707497,
+          "right_target": 0.0970420323,
+          "left_halfwidth_0_10_iqr": 0.1332431979,
+          "right_halfwidth_0_10_iqr": 0.0070926601,
+          "n_near_endpoint": 8168,
+          "share_main_train": 0.0066184222,
+          "median_funding_hours_near": 48.7370833333,
+          "fast_72h_rate_near": 0.542360431,
+          "left_right_correlation": -0.2286044545,
+          "main_train_n": 1234131
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "scenario",
+      "label": "Scenario contrasts",
+      "path": "outputs/scenario_contrasts.csv",
+      "query": {
+        "engine": "duckdb",
+        "language": "sql",
+        "sql": "SELECT * FROM read_csv_auto('outputs/scenario_contrasts.csv')",
+        "description": "Loads the reviewed joint P25-to-P75 current and recent-listing scenario estimates with explicit units.",
+        "executed_at": "2026-08-28T12:00:00Z",
+        "tables_used": [
+          "outputs/scenario_contrasts.csv"
+        ]
+      }
+    },
+    {
+      "id": "robustness",
+      "label": "Robustness specifications",
+      "path": "outputs/robustness.csv",
+      "query": {
+        "engine": "duckdb",
+        "language": "sql",
+        "sql": "SELECT * FROM read_csv_auto('outputs/robustness.csv')",
+        "description": "Loads the reviewed HDFE robustness coefficient table.",
+        "executed_at": "2026-08-28T12:00:00Z",
+        "tables_used": [
+          "outputs/robustness.csv"
+        ]
+      }
+    },
+    {
+      "id": "holdout",
+      "label": "2025 holdout validation",
+      "path": "outputs/holdout_validation.csv",
+      "query": {
+        "engine": "duckdb",
+        "language": "sql",
+        "sql": "SELECT * FROM read_csv_auto('outputs/holdout_validation.csv')",
+        "description": "Loads the reviewed controls-only and narrative-enhanced out-of-time metrics.",
+        "executed_at": "2026-08-28T12:00:00Z",
+        "tables_used": [
+          "outputs/holdout_validation.csv"
+        ]
+      }
+    },
+    {
+      "id": "year",
+      "label": "Year-specific effects",
+      "path": "outputs/rq3_year_effects.csv",
+      "query": {
+        "engine": "duckdb",
+        "language": "sql",
+        "sql": "SELECT * FROM read_csv_auto('outputs/rq3_year_effects.csv')",
+        "description": "Loads the reviewed year-specific scenario effects and uncertainty.",
+        "executed_at": "2026-08-28T12:00:00Z",
+        "tables_used": [
+          "outputs/rq3_year_effects.csv"
+        ]
+      }
+    },
+    {
+      "id": "support",
+      "label": "Joint support diagnostic",
+      "path": "outputs/joint_support_summary.csv",
+      "query": {
+        "engine": "duckdb",
+        "language": "sql",
+        "sql": "SELECT * FROM read_csv_auto('outputs/joint_support_summary.csv')",
+        "description": "Loads the endpoint-neighbourhood support counts.",
+        "executed_at": "2026-08-28T12:00:00Z",
+        "tables_used": [
+          "outputs/joint_support_summary.csv"
+        ]
+      }
+    },
+    {
+      "id": "sample",
+      "label": "Model sample flow",
+      "path": "outputs/model_sample_flow.csv",
+      "query": {
+        "engine": "duckdb",
+        "language": "sql",
+        "sql": "SELECT * FROM read_csv_auto('outputs/model_sample_flow.csv')",
+        "description": "Loads the reviewed analytical sample counts.",
+        "executed_at": "2026-08-28T12:00:00Z",
+        "tables_used": [
+          "outputs/model_sample_flow.csv"
+        ]
+      }
+    },
+    {
+      "id": "description",
+      "label": "Description sensitivity",
+      "path": "outputs/description_robustness.csv",
+      "query": {
+        "engine": "duckdb",
+        "language": "sql",
+        "sql": "SELECT * FROM read_csv_auto('outputs/description_robustness.csv')",
+        "description": "Loads the reviewed description-text sensitivity model.",
+        "executed_at": "2026-08-28T12:00:00Z",
+        "tables_used": [
+          "outputs/description_robustness.csv"
+        ]
+      }
+    },
+    {
+      "id": "unsw",
+      "label": "UNSW Marketing Analytics Hackathon 2026",
+      "href": "https://www.unsw.edu.au/business/our-schools/marketing/news-events/student-events/MA-hackathon"
+    }
+  ],
+  "package_info": {
+    "originUrl": "artifact://kiva-narrative-attention-final"
+  }
+}

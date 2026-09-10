@@ -1,0 +1,227 @@
+{
+  "generated_at_local": "2026-09-01T16:03:36+1000",
+  "root": "<PROJECT_ROOT>/5_最终交付包/MA-Hackathon-Final-2026-09-04",
+  "status": "FAIL",
+  "checks_passed": 19,
+  "checks_total": 20,
+  "checks": [
+    {
+      "name": "required deliverables present",
+      "passed": true,
+      "evidence": {
+        "missing": []
+      }
+    },
+    {
+      "name": "no symlinks",
+      "passed": true,
+      "evidence": {
+        "paths": []
+      }
+    },
+    {
+      "name": "no raw pickle or private/raw checkpoint directory",
+      "passed": true,
+      "evidence": {
+        "paths": []
+      }
+    },
+    {
+      "name": "JSON files parse",
+      "passed": true,
+      "evidence": {
+        "files": 20,
+        "errors": []
+      }
+    },
+    {
+      "name": "CSV files parse with stable row widths",
+      "passed": true,
+      "evidence": {
+        "files": 51,
+        "data_rows": 1671,
+        "errors": []
+      }
+    },
+    {
+      "name": "seven executed notebooks contain no error outputs",
+      "passed": true,
+      "evidence": {
+        "notebooks": [
+          "S0_prepare.ipynb",
+          "S1_audit.ipynb",
+          "S2_text.ipynb",
+          "S3_pools.ipynb",
+          "S4_models.ipynb",
+          "S5_hetero.ipynb",
+          "S6_engine.ipynb"
+        ],
+        "errors": []
+      }
+    },
+    {
+      "name": "portable HTML report validation and browser verification passed",
+      "passed": true,
+      "evidence": {
+        "stages": {
+          "validation": "passed",
+          "package": "passed",
+          "verification": "passed"
+        },
+        "viewports": [
+          1440,
+          390
+        ],
+        "sourceDialog": "passed"
+      }
+    },
+    {
+      "name": "PPTX has 16 slides, 16 notes, eight embedded figures and renders 16 pages",
+      "passed": false,
+      "evidence": {
+        "slides": 16,
+        "notes": 16,
+        "notes_with_sources": 15,
+        "media": 8,
+        "rendered_pages": 0,
+        "zip_error": null
+      }
+    },
+    {
+      "name": "pickle opcode intake gate passed",
+      "passed": true,
+      "evidence": {
+        "dangerous_opcode_count": 0,
+        "safe_for_restricted_primitive_deserialization": true
+      }
+    },
+    {
+      "name": "pool algebra identity gate passed",
+      "passed": true,
+      "evidence": {
+        "focal_loans": "200",
+        "pool_checks": "600",
+        "max_abs_error_raw": "2.90878432451791e-14",
+        "max_abs_error_residual": "2.5091040356528538e-14",
+        "acceptance_threshold": "1e-09",
+        "passed": "True"
+      }
+    },
+    {
+      "name": "joint scenario endpoint support gate passed",
+      "passed": true,
+      "evidence": {
+        "minimum_endpoint_neighbourhood_n": 4716,
+        "threshold": 1000
+      }
+    },
+    {
+      "name": "headline scenario values and recent-null boundaries match source tables",
+      "passed": true,
+      "evidence": {
+        "current_duration_percent": 124.35083720023474,
+        "current_fast_72h_percentage_points": -14.681812357882182,
+        "recent_duration_ci": [
+          -15.811057926371122,
+          15.429248398325255
+        ],
+        "recent_fast_72h_ci": [
+          -3.859079526287629,
+          2.8400048387428463
+        ]
+      }
+    },
+    {
+      "name": "analysis sample split reconciles exactly",
+      "passed": true,
+      "evidence": {
+        "Raw official extract": 1453846,
+        "Unique loan IDs": 1453846,
+        "Valid nonnegative duration": 1453840,
+        "72-hour label eligible": 1453346,
+        "Training 2016-2024, valid duration": 1316678,
+        "2025 holdout, valid duration": 137162
+      }
+    },
+    {
+      "name": "scenario intervals use the documented t(45) critical value and bounded units",
+      "passed": true,
+      "evidence": {
+        "rows": 4,
+        "degrees_of_freedom": [
+          "45"
+        ],
+        "critical_values": [
+          "2.014103388880846"
+        ],
+        "units": [
+          "percent change in conditional geometric mean of (1 + funding hours)",
+          "percentage-point change in 72h fast-funding rate"
+        ]
+      }
+    },
+    {
+      "name": "headline semantics are consistent across report, scripts, notes and PPTX",
+      "passed": true,
+      "evidence": {
+        "forbidden_hits": [],
+        "required": {
+          "geometric_mean_boundary": true,
+          "recent_proxy_boundary": true,
+          "current_caveat": true,
+          "raised_only_boundary": true
+        }
+      }
+    },
+    {
+      "name": "2025 no-deployment boundary matches holdout metrics",
+      "passed": true,
+      "evidence": {
+        "mae_log_hours_controls": 0.966306998368924,
+        "mae_log_hours_narrative": 0.9821963771626832,
+        "brier_controls": 0.13565434425321735,
+        "brier_narrative": 0.13699874252166472,
+        "auc_controls": 0.8985686100922293,
+        "auc_narrative": 0.8920642451202734
+      }
+    },
+    {
+      "name": "working-copy parquet schemas omit names, exact locations and full narrative text",
+      "passed": true,
+      "evidence": {
+        "files": 0,
+        "violations": []
+      }
+    },
+    {
+      "name": "no credential-like values in text artifacts",
+      "passed": true,
+      "evidence": {
+        "hits": []
+      }
+    },
+    {
+      "name": "reproducibility seed is neutral and consistent",
+      "passed": true,
+      "evidence": {
+        "paths": [
+          "src/freeze_spec.py",
+          "src/text_pipeline.py",
+          "src/predict_engine.py",
+          "model_artifacts/text_vectorizer_config.json",
+          "audit/frozen_spec_manifest.json",
+          "audit/stage6_engine_manifest.json"
+        ],
+        "neutral_seed": 20260904
+      }
+    },
+    {
+      "name": "external-facing artifacts omit archival source-file links",
+      "passed": true,
+      "evidence": {
+        "forbidden_reference": "source/2026 MA Hackathon",
+        "declared_boundary": "omit all source material"
+      }
+    }
+  ]
+}

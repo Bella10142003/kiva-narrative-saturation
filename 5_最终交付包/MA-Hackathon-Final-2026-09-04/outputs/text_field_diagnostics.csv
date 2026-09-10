@@ -1,0 +1,4 @@
+field,rows,nonempty,nonempty_pct,median_tokens,p90_tokens
+description,1453846,1414758.0,97.3114,93.0,167.0
+use,1453846,1414768.0,97.3121,10.0,19.0
+whySpecial,1453846,1413834.0,97.2479,10.0,15.0

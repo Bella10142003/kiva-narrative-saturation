@@ -1,0 +1,108 @@
+{
+  "pyfixest_version": "0.60.0",
+  "models": [
+    {
+      "model": "active_raw_main",
+      "outcome": "log_funding_hours",
+      "specification": "active_raw",
+      "input_rows": 1234131,
+      "estimated_rows": 1234131,
+      "formula": "log_funding_hours ~ active_raw_Cz + active_raw_Hz + active_raw_CH + active_raw_Vz + active_raw_Gz + active_raw_VG + log_loan_amount + log_borrower_count + log_repayment_term + log_platform_posting_7d + gender + repaymentInterval + posting_dow + posting_hour | country_name + activity + week_id",
+      "vcov": "country + week two-way CRV1"
+    },
+    {
+      "model": "active_raw_72h_lpm",
+      "outcome": "funded_within_72h",
+      "specification": "active_raw",
+      "input_rows": 1234131,
+      "estimated_rows": 1234131,
+      "formula": "funded_within_72h ~ active_raw_Cz + active_raw_Hz + active_raw_CH + active_raw_Vz + active_raw_Gz + active_raw_VG + log_loan_amount + log_borrower_count + log_repayment_term + log_platform_posting_7d + gender + repaymentInterval + posting_dow + posting_hour | country_name + activity + week_id",
+      "vcov": "country + week two-way CRV1"
+    },
+    {
+      "model": "active_residual_text",
+      "outcome": "log_funding_hours",
+      "specification": "active_residual",
+      "input_rows": 1149206,
+      "estimated_rows": 1149206,
+      "formula": "log_funding_hours ~ active_residual_Cz + active_residual_Hz + active_residual_CH + active_residual_Vz + active_residual_Gz + active_residual_VG + log_loan_amount + log_borrower_count + log_repayment_term + log_platform_posting_7d + gender + repaymentInterval + posting_dow + posting_hour | country_name + activity + week_id",
+      "vcov": "country + week two-way CRV1"
+    },
+    {
+      "model": "posting_14d_precommitted",
+      "outcome": "log_funding_hours",
+      "specification": "posting_14d_raw",
+      "input_rows": 1256348,
+      "estimated_rows": 1256347,
+      "formula": "log_funding_hours ~ posting_14d_raw_Cz + posting_14d_raw_Hz + posting_14d_raw_CH + posting_14d_raw_Vz + posting_14d_raw_Gz + posting_14d_raw_VG + log_loan_amount + log_borrower_count + log_repayment_term + log_platform_posting_7d + gender + repaymentInterval + posting_dow + posting_hour | country_name + activity + week_id",
+      "vcov": "country + week two-way CRV1"
+    },
+    {
+      "model": "posting_16d_calibrated",
+      "outcome": "log_funding_hours",
+      "specification": "posting_16d_raw",
+      "input_rows": 1256578,
+      "estimated_rows": 1256576,
+      "formula": "log_funding_hours ~ posting_16d_raw_Cz + posting_16d_raw_Hz + posting_16d_raw_CH + posting_16d_raw_Vz + posting_16d_raw_Gz + posting_16d_raw_VG + log_loan_amount + log_borrower_count + log_repayment_term + log_platform_posting_7d + gender + repaymentInterval + posting_dow + posting_hour | country_name + activity + week_id",
+      "vcov": "country + week two-way CRV1"
+    },
+    {
+      "model": "completed_only_lag",
+      "outcome": "log_funding_hours",
+      "specification": "active_completed_lag_raw",
+      "input_rows": 1234131,
+      "estimated_rows": 1234131,
+      "formula": "log_funding_hours ~ active_completed_lag_raw_Cz + active_completed_lag_raw_Hz + active_completed_lag_raw_CH + active_completed_lag_raw_Vz + active_completed_lag_raw_Gz + active_completed_lag_raw_VG + log_loan_amount + log_borrower_count + log_repayment_term + log_platform_posting_7d + gender + repaymentInterval + posting_dow + posting_hour | country_name + activity + week_id",
+      "vcov": "country + week two-way CRV1"
+    },
+    {
+      "model": "minimum_pool_5",
+      "outcome": "log_funding_hours",
+      "specification": "active_raw",
+      "input_rows": 1246929,
+      "estimated_rows": 1246927,
+      "formula": "log_funding_hours ~ active_raw_Cz + active_raw_Hz + active_raw_CH + active_raw_Vz + active_raw_Gz + active_raw_VG + log_loan_amount + log_borrower_count + log_repayment_term + log_platform_posting_7d + gender + repaymentInterval + posting_dow + posting_hour | country_name + activity + week_id",
+      "vcov": "country + week two-way CRV1"
+    },
+    {
+      "model": "minimum_pool_20",
+      "outcome": "log_funding_hours",
+      "specification": "active_raw",
+      "input_rows": 1207447,
+      "estimated_rows": 1207447,
+      "formula": "log_funding_hours ~ active_raw_Cz + active_raw_Hz + active_raw_CH + active_raw_Vz + active_raw_Gz + active_raw_VG + log_loan_amount + log_borrower_count + log_repayment_term + log_platform_posting_7d + gender + repaymentInterval + posting_dow + posting_hour | country_name + activity + week_id",
+      "vcov": "country + week two-way CRV1"
+    },
+    {
+      "model": "exclude_refunded",
+      "outcome": "log_funding_hours",
+      "specification": "active_raw",
+      "input_rows": 1234131,
+      "estimated_rows": 1234131,
+      "formula": "log_funding_hours ~ active_raw_Cz + active_raw_Hz + active_raw_CH + active_raw_Vz + active_raw_Gz + active_raw_VG + log_loan_amount + log_borrower_count + log_repayment_term + log_platform_posting_7d + gender + repaymentInterval + posting_dow + posting_hour | country_name + activity + week_id",
+      "vcov": "country + week two-way CRV1"
+    },
+    {
+      "model": "country_cluster_only",
+      "outcome": "log_funding_hours",
+      "specification": "active_raw",
+      "input_rows": 1234131,
+      "estimated_rows": 1234131,
+      "formula": "log_funding_hours ~ active_raw_Cz + active_raw_Hz + active_raw_CH + active_raw_Vz + active_raw_Gz + active_raw_VG + log_loan_amount + log_borrower_count + log_repayment_term + log_platform_posting_7d + gender + repaymentInterval + posting_dow + posting_hour | country_name + activity + week_id",
+      "vcov": "country CRV1"
+    },
+    {
+      "model": "week_cluster_only",
+      "outcome": "log_funding_hours",
+      "specification": "active_raw",
+      "input_rows": 1234131,
+      "estimated_rows": 1234131,
+      "formula": "log_funding_hours ~ active_raw_Cz + active_raw_Hz + active_raw_CH + active_raw_Vz + active_raw_Gz + active_raw_VG + log_loan_amount + log_borrower_count + log_repayment_term + log_platform_posting_7d + gender + repaymentInterval + posting_dow + posting_hour | country_name + activity + week_id",
+      "vcov": "week CRV1"
+    }
+  ],
+  "standardization_order": "fit 2016-2024 component means/stds; standardize C/H/V/G; then construct CH and VG; apply unchanged to 2025",
+  "outcome_scope": "All rows in the extract have raisedDate; duration and 72h results are conditional on loans present in this official extract.",
+  "elapsed_seconds": 64.171,
+  "rss_gib_at_end": 1.853
+}

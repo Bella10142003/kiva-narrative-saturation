@@ -1,0 +1,14 @@
+{
+  "generated_at_local": "2026-08-31T21:29:41+1000",
+  "raw_sample": 1234131,
+  "residual_sample": 1149206,
+  "rows_losing_all_text": 84925,
+  "corr_raw_vs_residual_H": 0.9352383184729075,
+  "corr_C_with_raw_H": -0.12970278528420495,
+  "corr_C_with_residual_H": -0.1901277581089001,
+  "share_use_sd": 0.35204747319221497,
+  "share_description_sd": 0.2822144031524658,
+  "random_seed": 20260904,
+  "vcov": "country/week two-way CRV1",
+  "elapsed_seconds": 42.336
+}

@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "zip": "<PROJECT_ROOT>/5_最终交付包/MA-Hackathon-Final-2026-09-04.zip",
+  "zip_size_bytes": 5771274,
+  "zip_sha256": "94e6e2a7a4b11227f2fd96626c1968d99eafca6399f981eb20e1ffbc0a823982",
+  "members": 148,
+  "artifact_members": 145,
+  "bad_member": null,
+  "validation": {
+    "status": "PASS",
+    "checks": {
+      "unique_members": true,
+      "safe_relative_paths": true,
+      "no_source_or_row_level_data": true,
+      "no_dev_cache_or_redundant_inspection": true,
+      "no_local_path_personal_seed_or_credentials": true,
+      "required_deliverables_present": true
+    },
+    "errors": []
+  }
+}

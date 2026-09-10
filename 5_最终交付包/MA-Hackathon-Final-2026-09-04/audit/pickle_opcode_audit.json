@@ -1,0 +1,33 @@
+{
+  "input_file": "Kiva_Loans.pkl",
+  "input_size_bytes": 1597994508,
+  "scan_elapsed_seconds": 98.642,
+  "stop_position": 1597994507,
+  "trailing_bytes_after_stop": 0,
+  "dangerous_opcode_count": 0,
+  "dangerous_opcodes_first_100": [],
+  "max_text_length": 17834,
+  "max_bytes_length": 0,
+  "opcode_counts": {
+    "APPENDS": 1454,
+    "BINFLOAT": 5842290,
+    "BINGET": 39332914,
+    "BININT": 3104578,
+    "BININT1": 5409619,
+    "BININT2": 1,
+    "BINUNICODE": 1391594,
+    "EMPTY_DICT": 1453846,
+    "EMPTY_LIST": 1,
+    "FRAME": 24303,
+    "LONG_BINGET": 21,
+    "MARK": 1455300,
+    "MEMOIZE": 25989451,
+    "NONE": 282657,
+    "PROTO": 1,
+    "SETITEMS": 1453846,
+    "SHORT_BINUNICODE": 23144010,
+    "STOP": 1
+  },
+  "safe_for_restricted_primitive_deserialization": true,
+  "privacy_note": "Arguments were not logged because the pickle contains borrower-level records."
+}

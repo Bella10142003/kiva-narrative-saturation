@@ -1,0 +1,48 @@
+# ============================================================
+#  UNSW MA Hackathon 2026 · Kiva narrative-saturation analysis
+#  仓库只收代码、文档与聚合结果；原始数据与中间数据一律不入库
+# ============================================================
+
+# ---- 原始数据与中间数据（不可再分发 / 体积过大，可由 notebook 重跑生成）----
+*.pkl
+*.parquet
+*.feather
+*.npz
+1_题目与数据/Kiva_Loans.pkl
+4_中间产物/data/
+4_中间产物/我算出来的结果/data/
+
+# ---- 交付包的重算副本与压缩包（与 5_最终交付包/MA-Hackathon-Final-2026-09-04/ 内容重复）----
+5_最终交付包/_rebuild/
+5_最终交付包/_control/
+5_最终交付包/*.zip
+
+# ---- 临时与缓存 ----
+tmp/
+4_中间产物/tmp/
+**/_tmp/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+*.log
+
+# ---- 环境 ----
+.venv/
+venv/
+env/
+.Rhistory
+.Rproj.user/
+
+# ---- 本地工具配置（含个人绝对路径）----
+.claude/settings.local.json
+
+# ---- 操作系统 ----
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
+
+# ---- 含学号的原件（仅本地保留，不公开）----
+2_提案/_原件（含学号·不入库）/
+# 与 2_提案/5 GUYS 提案.pdf 完全相同的重复文件（且为未脱敏版本）
+1_题目与数据/竞赛题目.pdf
