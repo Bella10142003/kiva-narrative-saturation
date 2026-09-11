@@ -2,9 +2,13 @@
 
 > 最终交付包。已定稿，勿改。
 
-The frozen submission package. **All content here is English.**
+The frozen submission package.
 
-Start with [`MA-Hackathon-Final-2026-09-04/REPORT.md`](MA-Hackathon-Final-2026-09-04/REPORT.md).
+**Language:** the methods appendix, runbook, QA record, speaker notes and all 42 result tables are English.
+The main report (`REPORT.md` and its HTML rendering) and the judge Q&A are written in Chinese with English
+technical terms and English tables. For an English account of the method, start with
+[`METHODS_APPENDIX.md`](MA-Hackathon-Final-2026-09-04/METHODS_APPENDIX.md) and
+[`SPEAKER_NOTES_EN.md`](MA-Hackathon-Final-2026-09-04/SPEAKER_NOTES_EN.md).
 
 | Path | What it is |
 |---|---|
