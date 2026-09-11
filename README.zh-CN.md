@@ -183,8 +183,10 @@ UNSW Sydney，2026。
 四份 `Kiva_QA_Prep_v*.docx` 收进 [`8_答辩准备/`](8_答辩准备/)，`v3.0.pptx` 归入 [`5_最终交付包/`](5_最终交付包/)。
 纯文本提及未改，无失效链接。注意 `CLAUDE.md` 移出根目录后不再被 Claude Code 自动加载。
 
-**语言约定**：两份根 README、各文件夹的英文导航 README、以及交付包里的方法附录 / RUNBOOK / QA 记录 / 英文讲稿 / 42 张结果表 —— 英文；
-notebook 正文、审查记录、提案清单、模拟验证报告 —— 中文。
+**语言约定**：**英文为主版本**，中文作为辅助保留。
 
-⚠️ 一处不一致：`5_最终交付包/…/REPORT.md` 与它的 HTML 渲染版、`JUDGE_QA_BILINGUAL.md` 正文是**中文**（术语与表格为英文）。
-对中国的读者不成问题，但如果要严格做到「产出层全英文」，需要单独翻一版。
+- 英文：两份根 README、各文件夹导航 README、交付包的 [`REPORT.en.md`](5_最终交付包/MA-Hackathon-Final-2026-09-04/REPORT.en.md)、方法附录、RUNBOOK、QA 记录、讲稿、42 张结果表，以及网页版报告 [https://bella10142003.github.io/kiva-narrative-saturation/](https://bella10142003.github.io/kiva-narrative-saturation/)
+- 中文（保留原件）：`REPORT.md` 及其 HTML 渲染版、`JUDGE_QA_BILINGUAL.md`、`SPEAKER_CUES_ZH.md` —— 这些是当时实际提交的产物，不改
+- 中文（过程层）：notebook 正文、审查记录、提案清单、模拟验证报告
+
+`REPORT.en.md` 的数字、置信区间与 `[来源：…]` 标注逐项对照过 `outputs/` 下的源 CSV，与中文原件一致。

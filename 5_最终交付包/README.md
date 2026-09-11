@@ -4,15 +4,17 @@
 
 The frozen submission package.
 
-**Language:** the methods appendix, runbook, QA record, speaker notes and all 42 result tables are English.
-The main report (`REPORT.md` and its HTML rendering) and the judge Q&A are written in Chinese with English
-technical terms and English tables. For an English account of the method, start with
-[`METHODS_APPENDIX.md`](MA-Hackathon-Final-2026-09-04/METHODS_APPENDIX.md) and
-[`SPEAKER_NOTES_EN.md`](MA-Hackathon-Final-2026-09-04/SPEAKER_NOTES_EN.md).
+**Start here:** [`REPORT.en.md`](MA-Hackathon-Final-2026-09-04/REPORT.en.md) — the full report in English.
+It also reads as a web page at **[https://bella10142003.github.io/kiva-narrative-saturation/](https://bella10142003.github.io/kiva-narrative-saturation/)**.
+
+**Language.** English is the primary version throughout: the report, methods appendix, runbook, QA record,
+speaker notes and all 42 result tables. Kept alongside as the submitted artefacts, in Chinese:
+`REPORT.md` and its HTML rendering, `JUDGE_QA_BILINGUAL.md`, `SPEAKER_CUES_ZH.md`.
 
 | Path | What it is |
 |---|---|
-| `MA-Hackathon-Final-2026-09-04/REPORT.md` | The full written report |
+| `MA-Hackathon-Final-2026-09-04/REPORT.en.md` | **The full written report (English)** |
+| `…/REPORT.md` | The Chinese original as submitted |
 | `…/METHODS_APPENDIX.md` | Methods appendix — estimator, pools, controls, clustering |
 | `…/outputs/` | 42 result tables as CSV, including `rq1_main_table.csv` and `robustness.csv` |
 | `…/figures/` | 8 figures as PNG and PDF, each with its source data table |

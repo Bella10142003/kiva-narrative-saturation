@@ -1,5 +1,7 @@
 # When Every Story Sounds the Same
 
+**📄 Read the full report as a web page → [https://bella10142003.github.io/kiva-narrative-saturation/](https://bella10142003.github.io/kiva-narrative-saturation/)**
+
 **Narrative saturation and funding speed on Kiva** — UNSW Marketing Analytics Hackathon 2026, Team *5 GUYS*.
 
 > 中文说明（更详细，含逐步骤导读）：**[README.zh-CN.md](README.zh-CN.md)**
@@ -74,7 +76,7 @@ by component, including what this simulation *cannot* answer — is in
 
 42 result tables: [`outputs/`](5_最终交付包/MA-Hackathon-Final-2026-09-04/outputs/) ·
 8 figures: [`figures/`](5_最终交付包/MA-Hackathon-Final-2026-09-04/figures/) ·
-full report: [`REPORT.md`](5_最终交付包/MA-Hackathon-Final-2026-09-04/REPORT.md) ·
+full report: [`REPORT.en.md`](5_最终交付包/MA-Hackathon-Final-2026-09-04/REPORT.en.md) ·
 methods: [`METHODS_APPENDIX.md`](5_最终交付包/MA-Hackathon-Final-2026-09-04/METHODS_APPENDIX.md)
 
 ### Robustness
@@ -122,7 +124,7 @@ Folder names are Chinese; each folder has a `README.md` in English saying what i
 | [`2_提案/`](2_提案/) | **Proposal** — the submitted proposal PDF (the single source of truth), requirements checklist, compliance matrix, assumptions and evidence logs |
 | [`3_分析步骤/`](3_分析步骤/) | **Analysis pipeline** — 18 numbered notebooks, `00` → `17`, run in order |
 | [`4_中间产物/`](4_中间产物/) | **Intermediates** — EDA scripts and tables, recomputation checks, audit manifests. Bulk `.parquet` excluded, regenerable |
-| [`5_最终交付包/`](5_最终交付包/) | **Final deliverable** — report, methods appendix, deck, 42 tables, 8 figures, SHA-256 manifest, 20-gate QA, and a clean `src/` of 18 modules |
+| [`5_最终交付包/`](5_最终交付包/) | **Final deliverable** — the English report, methods appendix, deck, 42 tables, 8 figures, SHA-256 manifest, 20-gate QA, and a clean `src/` of 18 modules |
 | [`6_模拟验证/`](6_模拟验证/) | **Simulation validation** — the harness `run_demo.sh` drives, plus the written verdict on all 14 components |
 | [`7_审查记录/`](7_审查记录/) | **Review log** — independent review rounds, including the ones that failed |
 | [`8_答辩准备/`](8_答辩准备/) | **Q&A preparation** — anticipated judge questions and answers |
