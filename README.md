@@ -57,9 +57,9 @@ stated trade: **accept coefficient attenuation to remove endogeneity bias.**
 
 Fourteen methodology components were scored this way. **Three earned their place, four were pure no-ops, five
 were written in a way that would mislead, and two actively made the estimates worse.** Cutting the dead weight
-roughly halved the analysis workload without losing a single defensible conclusion. The full verdict — component
-by component, including what this simulation *cannot* answer — is in
-[`6_模拟验证/模拟验证报告.md`](6_模拟验证/模拟验证报告.md) (Chinese).
+roughly halved the analysis workload without losing a single defensible conclusion. The full verdict — component by
+component, including a section on what this simulation *cannot* answer — is in
+[`6_模拟验证/SIMULATION_VALIDATION.md`](6_模拟验证/SIMULATION_VALIDATION.md).
 
 ---
 

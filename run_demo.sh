@@ -49,6 +49,6 @@ time, so it cannot be contaminated by outcomes — pulls the estimate back.
 That single finding is why the mirror pool exists in the real analysis.
 
 The written verdict on all 14 methodology components is in
-6_模拟验证/模拟验证报告.md (Chinese).
+6_模拟验证/SIMULATION_VALIDATION.md .
 ---------------------------------------------------------------------------
 MSG

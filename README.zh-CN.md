@@ -27,7 +27,8 @@ bash run_demo.sh
 作弊对照证明偏误来自那个分析端看不见的行业-周冲击；而只用上架时点构造、不可能被结果污染的**镜像池**
 把估计拉回 0.107。代价是同质度被衰减（H 从 0.170 掉到 0.054）——这是一笔明说的交易：**用系数衰减换掉内生性偏误**。
 14 个方法论环节照此逐个打分：**3 个真有用、4 个恒为空转、5 个写法会误导、2 个反而更差**，
-砍掉之后分析工作量少了约一半，能站住的结论一个没少。逐条判定见 [6_模拟验证/模拟验证报告.md](6_模拟验证/模拟验证报告.md)。
+砍掉之后分析工作量少了约一半，能站住的结论一个没少。
+逐条判定见 [模拟验证报告.md](6_模拟验证/模拟验证报告.md)（中文原件）或 [SIMULATION_VALIDATION.md](6_模拟验证/SIMULATION_VALIDATION.md)（英文）。
 
 ---
 
@@ -187,6 +188,7 @@ UNSW Sydney，2026。
 
 - 英文：两份根 README、各文件夹导航 README、交付包的 [`REPORT.en.md`](5_最终交付包/MA-Hackathon-Final-2026-09-04/REPORT.en.md)、方法附录、RUNBOOK、QA 记录、讲稿、42 张结果表，以及网页版报告 [https://bella10142003.github.io/kiva-narrative-saturation/](https://bella10142003.github.io/kiva-narrative-saturation/)
 - 中文（保留原件）：`REPORT.md` 及其 HTML 渲染版、`JUDGE_QA_BILINGUAL.md`、`SPEAKER_CUES_ZH.md` —— 这些是当时实际提交的产物，不改
-- 中文（过程层）：notebook 正文、审查记录、提案清单、模拟验证报告
+- 英文（过程层已译）：[`6_模拟验证/SIMULATION_VALIDATION.md`](6_模拟验证/SIMULATION_VALIDATION.md) —— 它支撑 README 里最核心的那段叙事，因此单独译了一版
+- 中文（过程层）：notebook 正文、审查记录、提案清单、`模拟验证报告.md` 原件
 
 `REPORT.en.md` 的数字、置信区间与 `[来源：…]` 标注逐项对照过 `outputs/` 下的源 CSV，与中文原件一致。

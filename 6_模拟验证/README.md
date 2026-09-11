@@ -16,7 +16,8 @@ reads. Roughly 90 seconds end to end; output goes to `_run/`.
 It found that the proposal's headline specification overstated market crowding by about 3×, and that a
 mirror pool built only from posting time recovers a near-unbiased estimate. Fourteen methodology components
 were scored this way: three kept, four no-ops, five rewritten, two removed. The written verdict is
-[`模拟验证报告.md`](模拟验证报告.md).
+[`SIMULATION_VALIDATION.md`](SIMULATION_VALIDATION.md) (English; the Chinese original is
+[`模拟验证报告.md`](模拟验证报告.md)).
 
 ---
 
