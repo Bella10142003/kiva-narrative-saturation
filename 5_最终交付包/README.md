@@ -24,7 +24,8 @@ speaker notes and all 42 result tables. Kept alongside as the submitted artefact
 | `…/MANIFEST_SHA256.txt` | SHA-256 of every packaged file |
 | `…/RUNBOOK.md` | How to re-run everything from scratch |
 | `…/JUDGE_QA_BILINGUAL.md` · `…/SPEAKER_NOTES_EN.md` | Presentation material |
-| `When_Every_Story_Sounds_The_Same v*.pptx` | Deck revision history, v2.4 through v3.0 |
+| `When_Every_Story_Sounds_The_Same v*.pptx` | Deck revision history, v2.4 through v3.0. v3.0 (20 slides) is the latest |
+| [`../site/Kiva_Presentation_v3.0.pdf`](../site/Kiva_Presentation_v3.0.pdf) | **v3.0 exported to PDF** — readable in the browser without downloading |
 
 Note: 19 files in this package had absolute local paths redacted before publication, so their hashes no
 longer match `MANIFEST_SHA256.txt`. See *A note on redaction* in the [root README](../README.md).

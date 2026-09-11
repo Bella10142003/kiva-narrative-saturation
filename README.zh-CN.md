@@ -1,6 +1,7 @@
 # UNSW MA Hackathon 2026 · Kiva 叙事饱和度分析
 
 > English overview: **[README.md](README.md)**
+> 项目网页（英文）：**[https://bella10142003.github.io/kiva-narrative-saturation/](https://bella10142003.github.io/kiva-narrative-saturation/)** · [完整报告](https://bella10142003.github.io/kiva-narrative-saturation/report.html) · [演示 deck（20 页 PDF）](site/Kiva_Presentation_v3.0.pdf)
 
 > **目标**：照着提交的提案 [2_提案/5 GUYS 提案.pdf](2_提案/5%20GUYS%20提案.pdf)
 > 《WHEN EVERY STORY SOUNDS THE SAME》（RQ1–RQ4），把 1,453,846 行 Kiva 数据的分析一步步做出来。

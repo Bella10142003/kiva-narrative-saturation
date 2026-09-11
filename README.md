@@ -1,6 +1,8 @@
 # When Every Story Sounds the Same
 
-**📄 Read the full report as a web page → [https://bella10142003.github.io/kiva-narrative-saturation/](https://bella10142003.github.io/kiva-narrative-saturation/)**
+**📄 Project site → [https://bella10142003.github.io/kiva-narrative-saturation/](https://bella10142003.github.io/kiva-narrative-saturation/)** — the whole story on one page, the
+[full report](https://bella10142003.github.io/kiva-narrative-saturation/report.html), and the
+[presentation deck](https://bella10142003.github.io/kiva-narrative-saturation/site/Kiva_Presentation_v3.0.pdf) (20 slides).
 
 **Narrative saturation and funding speed on Kiva** — UNSW Marketing Analytics Hackathon 2026, Team *5 GUYS*.
 
@@ -74,6 +76,8 @@ component, including a section on what this simulation *cannot* answer — is in
 | **RQ4 — where it bites** | sector × country | [`rq4_sector_effects.csv`](5_最终交付包/MA-Hackathon-Final-2026-09-04/outputs/rq4_sector_effects.csv) · [`rq4_country_effects.csv`](5_最终交付包/MA-Hackathon-Final-2026-09-04/outputs/rq4_country_effects.csv) |
 | **2025 out-of-sample** | **negative result** | Adding narrative features worsens 6 of 7 metrics (R² 0.5524 → 0.5370; AUC 0.8986 → 0.8921). Reported as found |
 
+Presentation deck: [`Kiva_Presentation_v3.0.pdf`](site/Kiva_Presentation_v3.0.pdf) — 9 slides plus 11 appendix
+slides (model equation, specification checks, boilerplate rule, year-by-year regime shift, sources) ·
 42 result tables: [`outputs/`](5_最终交付包/MA-Hackathon-Final-2026-09-04/outputs/) ·
 8 figures: [`figures/`](5_最终交付包/MA-Hackathon-Final-2026-09-04/figures/) ·
 full report: [`REPORT.en.md`](5_最终交付包/MA-Hackathon-Final-2026-09-04/REPORT.en.md) ·
@@ -129,6 +133,7 @@ Folder names are Chinese; each folder has a `README.md` in English saying what i
 | [`7_审查记录/`](7_审查记录/) | **Review log** — independent review rounds, including the ones that failed |
 | [`8_答辩准备/`](8_答辩准备/) | **Q&A preparation** — anticipated judge questions and answers |
 | [`docs/`](docs/) | Working rules for the team: competition rules of record, drafting and review protocols, onboarding guide |
+| [`site/`](site/) | Assets for the project site: the deck as PDF, figures, slide previews |
 
 Four steps carry most of the technical weight:
 [03 freeze definitions](3_分析步骤/03_冻结变量定义.ipynb) ·

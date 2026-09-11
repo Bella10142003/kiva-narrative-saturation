@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Final report &mdash; Narrative attention on Kiva</title><meta name="description" content="The full written report: narrative saturation and funding speed across 1,453,846 Kiva loans.">
+<style>
+:root{color-scheme:light dark;--bg:#fbfbfa;--ink:#1a1a18;--muted:#6b6b66;--rule:#e3e2dd;--accent:#0b5cad;--card:#fff;--code:#f2f1ec;--warn:#8a5a00;--warnbg:#fff8e8}
+@media(prefers-color-scheme:dark){:root{--bg:#16161a;--ink:#e8e8e4;--muted:#9a9a94;--rule:#2e2e34;--accent:#7db4ef;--card:#1d1d22;--code:#232329;--warn:#e0b661;--warnbg:#2a2415}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.68 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,"Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px 96px}
+header{border-bottom:1px solid var(--rule);margin-bottom:14px;padding-block:56px 32px}
+h1{font-size:2.5rem;line-height:1.1;letter-spacing:-.024em;margin:0 0 .32em;font-weight:700}
+.sub{font-size:1.18rem;color:var(--muted);margin:0 0 1.5em;line-height:1.5}
+.meta{font-size:.9rem;color:var(--muted);line-height:1.85}
+.nav{margin-top:26px;display:flex;flex-wrap:wrap;gap:10px}
+.nav a{display:inline-block;padding:7px 15px;border:1px solid var(--rule);border-radius:999px;background:var(--card);color:var(--ink);text-decoration:none;font-size:.88rem}
+.nav a:hover{border-color:var(--accent);color:var(--accent)}
+.nav a.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+h2{font-size:1.48rem;letter-spacing:-.014em;margin:2.8em 0 .2em;padding-top:1.6em;border-top:1px solid var(--rule);font-weight:660}
+h2 .step{display:block;font-size:.76rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:.6em}
+h2:first-of-type{border-top:none}
+h3{font-size:1.07rem;margin:2em 0 .5em;font-weight:650}
+.lede{font-size:1.06rem;color:var(--muted);margin:.2em 0 1.4em}
+p{margin:0 0 1.15em}
+a{color:var(--accent)}
+strong{font-weight:650}
+code{background:var(--code);padding:.13em .38em;border-radius:4px;font:.87em ui-monospace,SFMono-Regular,Menlo,monospace}
+pre{background:var(--code);padding:15px 17px;border-radius:9px;overflow-x:auto;font-size:.85rem;line-height:1.6;margin:1.4em 0}
+pre code{background:none;padding:0;font-size:1em}
+blockquote{margin:1.8em 0;padding:14px 20px;border-left:3px solid var(--rule);background:var(--card);color:var(--muted);font-size:.95rem;border-radius:0 8px 8px 0}
+blockquote p:last-child{margin:0}
+ul,ol{margin:0 0 1.15em;padding-left:1.35em}li{margin:.34em 0}
+figure{margin:2em 0}
+figure img{width:100%;height:auto;display:block;border:1px solid var(--rule);border-radius:10px;background:#fff}
+figcaption{font-size:.85rem;color:var(--muted);margin-top:.7em;line-height:1.5}
+.tw{overflow-x:auto;margin:1.6em 0}
+table{border-collapse:collapse;width:100%;font-size:.91rem}
+th,td{border:1px solid var(--rule);padding:9px 12px;text-align:left;vertical-align:top}
+th{background:var(--card);font-weight:650}
+.note{background:var(--warnbg);border:1px solid color-mix(in srgb,var(--warn) 35%,transparent);color:var(--ink);padding:14px 18px;border-radius:9px;margin:1.6em 0;font-size:.94rem}
+.note b{color:var(--warn)}
+.slides{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:1.8em 0}
+.slides a{display:block;border:1px solid var(--rule);border-radius:9px;overflow:hidden;background:var(--card);text-decoration:none}
+.slides img{width:100%;display:block}
+.slides span{display:block;padding:9px 12px;font-size:.82rem;color:var(--muted);line-height:1.45}
+footer{margin-top:64px;padding-top:26px;border-top:1px solid var(--rule);font-size:.87rem;color:var(--muted)}
+@media(max-width:640px){body{font-size:16px}h1{font-size:1.9rem}header{padding-block:40px 26px}.wrap{padding:0 16px 64px}.slides{grid-template-columns:1fr}}
+</style></head><body><div class="wrap">
+<header>
+<h1>Final report</h1>
+<p class="sub">Narrative attention on Kiva &mdash; the full written report, in English.</p>
+<p class="meta"><strong>Team 5 GUYS</strong> &middot; Ruohan Wang &middot; Ruiyang Zheng &middot; Hongxin Luo &middot; Yiou Liu &middot; Jingzhi Hu<br>
+UNSW Marketing Analytics Hackathon 2026 &middot; Finalist &middot; final presentation 4 September 2026<br>
+Every result below is a conditional association, not an intervention forecast.</p>
+<nav class="nav">
+<a href="./" class="primary">&larr; Project overview</a>
+<a href="https://github.com/Bella10142003/kiva-narrative-saturation/blob/main/5_%E6%9C%80%E7%BB%88%E4%BA%A4%E4%BB%98%E5%8C%85/MA-Hackathon-Final-2026-09-04/REPORT.md">Chinese original</a>
+<a href="https://github.com/Bella10142003/kiva-narrative-saturation/tree/main/5_%E6%9C%80%E7%BB%88%E4%BA%A4%E4%BB%98%E5%8C%85/MA-Hackathon-Final-2026-09-04/outputs">42 result tables</a>
+<a href="https://github.com/Bella10142003/kiva-narrative-saturation/blob/main/5_%E6%9C%80%E7%BB%88%E4%BA%A4%E4%BB%98%E5%8C%85/MA-Hackathon-Final-2026-09-04/METHODS_APPENDIX.md">Methods appendix</a>
+</nav></header>
+<blockquote>
+<p>English translation of <a href="REPORT.md"><code>REPORT.md</code></a>. All figures, confidence intervals and source citations are
+carried over unchanged; the Chinese original remains the version of record.</p>
+</blockquote>
+<h2>Technical summary</h2>
+<p>We split "slow funding" into two attention channels to be tested separately: <strong>current competition</strong> — the
+same-sector loans live at this moment are both numerous and alike — and a <strong>recent-listing language proxy</strong> —
+the same-sector loans that went live 35–65 days earlier are both numerous and alike. The second channel has no
+observed impressions, page exits or memory, so it can only serve as a posting-age proxy for the wear-out
+hypothesis. The main model uses 1,234,131 training loans from 2016–2024; the 133,409 loans in the 2025 main
+sample are held out in time. [Source: <code>outputs/model_sample_flow.csv</code>, <code>outputs/frozen_spec.csv</code>]</p>
+<p>The strongest result comes from the current environment. In the <code>log(1 + funding hours)</code> model, moving current
+volume and focal-to-pool lexical overlap together from the training-sample P25 to P75 corresponds to a
+<strong>124.35 % increase in the conditional geometric mean of <code>1 + funding hours</code></strong> (95 % CI 103.71 % to 147.08 %),
+a ratio of <strong>2.24</strong>. This is not an arithmetic mean funding duration. On the separate 72-hour co-outcome, the
+probability of completing funding falls by <strong>14.68 percentage points</strong> (95 % CI −17.69 to −11.67 pp).
+[Source: <code>outputs/scenario_contrasts.csv</code>]</p>
+<p>The recent-listing proxy does not produce a result of comparable strength: the joint P25 → P75 scenario is
+<strong>−1.42 %</strong> on the same log-time back-transform (95 % CI −15.81 % to 15.43 %), and <strong>−0.51 pp</strong> on the 72-hour
+probability (95 % CI −3.86 to 2.84). Both intervals cross zero, so the local <code>V×G</code> interaction cannot be
+promoted into a robust average wear-out conclusion. [Source: <code>outputs/scenario_contrasts.csv</code>]</p>
+<p>The 2025 holdout narrows the actionable boundary further. Adding the narrative features gives a log-hour MAE of
+0.9822 against 0.9663 for controls only on the sample with a complete 35-day follow-up; the 72-hour Brier score
+is 0.1370 against 0.1357 and AUC is 0.8921 against 0.8986. Log-loss improves slightly, from 0.4317 to 0.4301,
+but not nearly enough to support deploying borrower scoring. [Source: <code>outputs/holdout_validation.csv</code>]</p>
+<p><strong>Recommendation: do not deploy the Narrative Attention Engine to score borrowers. Use current saturation as an
+experiment trigger, and test listing schedule / exposure diversification and partner-approved template
+alternatives first.</strong></p>
+<h2>Scope and data boundaries</h2>
+<ul>
+<li>The official data contains 1,453,846 loans spanning 2016-01-01 to 2025-12-31. Six records with
+  <code>raisedDate &lt; fundraisingDate</code> are excluded. [Source: <code>outputs/data_profile_summary.csv</code>]</li>
+<li>Every record in this extract has a <code>raisedDate</code>. The extract therefore cannot identify true right censoring
+  and does not support reading the outcome as "the probability of funding across all posted loans". What is
+  analysed here is the loans in the extract with an observed <code>raisedDate</code>.
+  [Source: <code>outputs/status_raised_crosstab.csv</code>]</li>
+<li>The main outcome is <code>log(1 + funding hours)</code>, with 72-hour fast funding reported as a co-outcome. Records at
+  the end of 2025 with less than 72 hours of follow-up are excluded from the 72-hour evaluation.
+  [Source: <code>outputs/followup_eligibility.csv</code>]</li>
+<li>All times are UTC. The training period is 2016–2024; IDF, standardisation parameters and every learned step
+  are fitted on the training period only and then applied unchanged to 2025. [Source: <code>outputs/frozen_spec.csv</code>]</li>
+<li>Fields determined only after listing, such as <code>fundsLentInCountry</code>, are excluded from the model. No output
+  contains names, precise locations or full narrative text.</li>
+</ul>
+<h2>Measurement design: rebuilding the attention market at the moment of listing</h2>
+<p>For each focal loan we compute two same-sector environments:</p>
+<ol>
+<li><strong>Current channel</strong> — <code>C = log1p(active same-sector count)</code>; <code>H = mean cosine similarity between the focal
+   narrative and the active pool</code> (focal-to-pool lexical overlap, <em>not</em> pairwise homogeneity within the pool).
+   Current saturation is the standardised <code>C×H</code>.</li>
+<li><strong>Recent-listing proxy</strong> — <code>V</code> = volume of earlier loans within a posting-age window of [35, 65) days,
+   weighted with a 7-day half-life; <code>G</code> = mean similarity to that same weighted pool. Proxy saturation is the
+   standardised <code>V×G</code>. The main pool does not require the earlier loans to have finished, and there is no
+   lender exposure data; a completed-only lag pool is used as a sensitivity check.</li>
+</ol>
+<p>The primary text field is <code>use</code>, masked for names, locations, amounts and dates. TF–IDF uses hashed word
+unigrams and bigrams (2^17 features) with smoothed IDF fitted on the training period only. 409 verbatim
+five-grams appearing in at least 659 training documents and across at least 3 countries are defined as
+recurring language. Because the data has no partner ID, "across countries" is only a proxy for shared origin
+and cannot attribute language to any particular institution.
+[Source: <code>audit/stage2_text_manifest.json</code>, <code>outputs/boilerplate_like_phrases.csv</code>]</p>
+<p>Similarity is not computed by brute-force pairwise enumeration but through the exact identity
+<code>mean cosine = focal vector · mean pool vector</code>. Across 600 checks — 200 focal loans × 3 pools — the maximum
+absolute error is 2.909e-14 raw and 2.509e-14 residual, below the 1e-9 acceptance threshold.
+[Source: <code>outputs/pool_identity_summary.csv</code>, <code>audit/stage3_feature_manifest.json</code>]</p>
+<p>The P25/P75 joint scenario also passes a local support check: within a neighbourhood of ±0.10 IQR on both
+dimensions, each current and recent endpoint has at least 4,716 real training records behind it. This check
+only establishes that the scenario endpoints are not hollow extrapolation; it does not establish
+exchangeability or causal identification. [Source: <code>outputs/joint_support_summary.csv</code>]</p>
+<figure><img src="site/fig01-channels.png" alt="Joint P25 to P75 shift for both channels"><figcaption>Both channels, joint P25 &rarr; P75 shift. Left: log-time outcome. Right: 72-hour funding probability.</figcaption></figure>
+<h2>Finding 1 — Current market saturation is a strong but non-causal diagnostic signal</h2>
+<p>The main HDFE model controls for loan amount, borrower count, repayment term and platform 7-day listing
+volume, and absorbs country, activity, week, gender, repayment interval and posting day/hour fixed effects.
+Standard errors are two-way clustered on country and week. The <code>C×H</code> coefficient is 0.1017
+(95 % CI 0.0357 to 0.1677, p = 0.003308). [Source: <code>outputs/rq1_main_table.csv</code>]</p>
+<p>The substantive reading uses the full joint scenario rather than translating the interaction coefficient into
+a percentage on its own: moving current volume and focal-to-pool lexical overlap together from P25 to P75
+corresponds to <strong>+124.35 %</strong> in the conditional geometric mean of <code>1 + funding hours</code> and <strong>−14.68 pp</strong> in the
+72-hour probability. The first is not an arithmetic mean funding duration, and both are conditional
+associations in observational data — not intervention forecasts for a redesigned Kiva.
+[Source: <code>outputs/scenario_contrasts.csv</code>]</p>
+<h2>Finding 2 — Template language may contribute to the current signal, but no causal decomposition is possible</h2>
+<p>On raw masked <code>use</code>, <code>C×H</code> is 0.1017 (p = 0.003308); with recurring language removed it is 0.0523 (p = 0.129).
+The estimate roughly halves and no longer reaches conventional significance — but this does <strong>not</strong> mean
+"templates explain half of it", because the difference between the two coefficients has not been put through a
+formal cross-model difference test. [Source: <code>outputs/robustness.csv</code>]</p>
+<p>The description sensitivity provides complementary evidence: on masked <code>description</code>, <code>C×H</code> is 0.1298
+(95 % CI 0.0875 to 0.1721, p = 1.663e-07) while <code>V×G</code> is −0.0136 (95 % CI −0.0441 to 0.0170, p = 0.376). The
+identity check over 50 focal loans × 2 pools has a maximum error of 1.721e-15, passing the 1e-9 standard.
+[Source: <code>outputs/description_robustness.csv</code>, <code>audit/description_robustness_manifest.json</code>]</p>
+<p>The managerial implication is not to ask borrowers to "tell it louder", but to test the platform's and the
+lending partners' templates, scheduling and exposure processes.</p>
+<h2>Finding 3 — A local recent-listing interaction cannot be promoted to average wear-out</h2>
+<p>The raw <code>V×G</code> coefficient is 0.0417 (p = 0.003658) and the residual is 0.0585 (p = 0.0007078). But these
+coefficients test the conditional interaction of a posting-age proxy. The joint P25 → P75 scenario includes
+<code>V</code>, <code>G</code> and <code>V×G</code> together, and its log-time back-transform is −1.42 % with a confidence interval that
+crosses zero. [Source: <code>outputs/robustness.csv</code>, <code>outputs/scenario_contrasts.csv</code>]</p>
+<p>At the same time, current <code>C×H</code> stays positive and significant under both 14-day and 16-day posting windows,
+while lagged <code>V×G</code> is not significant in the time-based specifications. The current result is therefore robust
+to the window choice but sensitive to text decomposition, and the recent result is not strong enough to
+justify prioritising a wear-out editorial intervention. [Source: <code>outputs/robustness.csv</code>]</p>
+<figure><img src="site/fig02-robustness.png" alt="Specification forest"><figcaption>Six alternative specifications. The current-pool signal holds across all six; the recent-listing proxy is the fragile one.</figcaption></figure>
+<h2>Temporal and segment heterogeneity — real, but not for ranking</h2>
+<p>Year-specific scenario contrasts across 2016–2024 show both channels fluctuating substantially, and global
+heterogeneity screens on year, sector and country all indicate differences. [Source: <code>outputs/rq3_year_effects.csv</code>,
+<code>outputs/rq3_global_tests.csv</code>, <code>outputs/rq4_sector_global_tests.csv</code>, <code>outputs/rq4_country_global_tests.csv</code>]</p>
+<p>These results stay exploratory. Country heterogeneity covers only the 15 countries with the highest training
+volume, and the sector models cover the 14 sectors that meet the estimation threshold. Many subgroup
+confidence intervals are wide, and the global Q screen does not estimate the cross-group covariance induced by
+shared week shocks. The report therefore does not pick a "best country" or "best sector" out of a ranking, and
+certainly does not use heterogeneity for borrower targeting.</p>
+<h2>2025 holdout — the explanatory signal does not become stable incremental prediction</h2>
+<p>On the 123,489 loans in 2025 with at least 35 days of follow-up, log-hour MAE is 0.9663 for controls only
+against 0.9822 with narrative features; hour MAE is 168.28 against 168.61.
+[Source: <code>outputs/holdout_validation.csv</code>]</p>
+<p>On the 72-hour evaluation, Brier is 0.1357 against 0.1370 and AUC is 0.8986 against 0.8921; log-loss is 0.4317
+against 0.4301. We did not compute paired uncertainty for these metric differences, so the accurate statement
+is that <strong>the narrative model did not beat the baseline on the main operational metrics</strong> — not that it is
+significantly worse. [Source: <code>outputs/holdout_validation.csv</code>]</p>
+<p>Calibration still shows visible gaps across several gender and sector subgroups. These diagnostics are
+guardrails only and cannot be a basis for protected-group targeting. [Source: <code>outputs/fairness_diagnostics.csv</code>]</p>
+<h2>Recommendation — run platform experiments, not borrower scoring</h2>
+<h3>Pilot A · Scheduling and exposure under current saturation</h3>
+<ul>
+<li><strong>Entry condition:</strong> a pre-defined high-current-saturation market state. Not conditioned on borrower quality.</li>
+<li><strong>Randomisation:</strong> business-as-usual exposure versus staggered listing / diversified related-loan exposure.</li>
+<li><strong>Primary outcomes:</strong> time-to-funding, 72-hour funding probability.</li>
+<li><strong>Guardrails:</strong> total funding volume, allocation across countries and sectors, fairness, borrower workload.</li>
+</ul>
+<h3>Pilot B · Partner-approved template alternatives</h3>
+<ul>
+<li>The randomisation unit and the intervention content must be fixed by Kiva and the lending partners before launch.</li>
+<li>Compare the current template against several compliant alternatives. Borrowers must not be asked for more
+  sensitive or longer personal narratives.</li>
+<li>Pre-register the MDE, analysis window, stopping rule and heterogeneity tests to prevent post-hoc selection.</li>
+</ul>
+<h3>Explicitly out of bounds</h3>
+<ul>
+<li>Do not deploy the Narrative Attention Engine as a borrower ranking, approval, penalty or auto-rewriting tool.</li>
+<li>Do not interpret a saturation score as borrower quality, creditworthiness or moral worth.</li>
+<li>Do not adjust exposure on the basis of uncalibrated subgroup scores.</li>
+</ul>
+<h2>Key limitations and the questions that follow</h2>
+<ol>
+<li>The data has no impressions, ranking, clicks, promotion, image quality or partner ID. Any of these omitted
+   factors could drive both saturation and funding speed.</li>
+<li>The duration of the active pool is itself affected by earlier funding outcomes, so endogeneity remains. The
+   14- and 16-day pre-committed posting windows reduce but do not eliminate the confounding.</li>
+<li>TF–IDF measures lexical repetition, not semantics, visual appeal or multilingual perception, and country is
+   only a proxy for origin. The main recent pool is defined by posting age; it does not prove that the earlier
+   loans had left the page, been seen by lenders, or left a memory.</li>
+<li>The raised-only extract limits extrapolation. These results cannot stand in for the success probability of
+   all posted loans.</li>
+<li>The 2025 holdout exposes temporal drift. Any operational application must be recalibrated and validated
+   through a prospective experiment.</li>
+</ol>
+<p>The two most important next questions: how much of the current association survives once real exposure and
+ranking logs are added, and does randomly changing the listing mix actually improve funding speed without
+diverting attention away from other disadvantaged borrowers?</p>
+<h2>Reproducibility and file index</h2>
+<ul>
+<li>Executed notebooks: <code>notebooks/S0_prepare.ipynb</code> through <code>notebooks/S6_engine.ipynb</code>.</li>
+<li>Full implementation: <code>src/</code>. Execution order is in <code>RUNBOOK.md</code>.</li>
+<li>Core results: <code>outputs/scenario_contrasts.csv</code>, <code>outputs/robustness.csv</code>, <code>outputs/holdout_validation.csv</code>.</li>
+<li>300 dpi figures with paired source CSVs: <code>figures/</code> and <code>figures/source_data/</code>.</li>
+<li>Quality and run evidence: <code>audit/</code>, <code>logs/run_log.txt</code>.</li>
+<li>Official challenge objectives, dates and judging criteria:
+  <a href="https://www.unsw.edu.au/business/our-schools/marketing/news-events/student-events/MA-hackathon">UNSW Marketing Analytics Hackathon Challenge 2026</a>.</li>
+</ul>
+<blockquote>
+<p>Version note: this report is written from the full real outputs. The runbooks and prompts in the appendix are
+early team source material only; the saved code, audit trail and frozen specification govern what was
+actually executed.</p>
+</blockquote>
+<footer>Team 5 GUYS &middot; UNSW Marketing Analytics Hackathon 2026 &middot;
+<a href="https://github.com/Bella10142003/kiva-narrative-saturation">source on GitHub</a> &middot;
+code and writing under the <a href="https://github.com/Bella10142003/kiva-narrative-saturation/blob/main/LICENSE">MIT licence</a>.<br>
+The Kiva dataset is competition material and is not redistributed.</footer>
+</div></body></html>

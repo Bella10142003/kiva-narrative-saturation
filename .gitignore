@@ -49,3 +49,6 @@ desktop.ini
 
 # ---- run_demo.sh 的输出 ----
 6_模拟验证/_run/
+
+# ---- 站点构建的临时文件 ----
+site/.DS_Store
