@@ -15,6 +15,8 @@
 生成 2 万条埋了真实系数的合成贷款 → 跑完整分析流水线 → 拿从不许读的答案本逐项对分。
 
 ```bash
+git clone https://github.com/Bella10142003/kiva-narrative-saturation.git
+cd kiva-narrative-saturation
 pip install numpy pandas scipy scikit-learn
 bash run_demo.sh
 ```

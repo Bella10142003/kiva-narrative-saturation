@@ -22,7 +22,8 @@ loans with the true coefficients planted in them, runs the full pipeline against
 estimate against a ground truth the pipeline is never allowed to read.
 
 ```bash
-git clone <this repo> && cd <this repo>
+git clone https://github.com/Bella10142003/kiva-narrative-saturation.git
+cd kiva-narrative-saturation
 pip install numpy pandas scipy scikit-learn
 bash run_demo.sh
 ```
